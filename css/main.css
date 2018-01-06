@@ -2,14 +2,15 @@
 
 body {
     font-family: 'Chivo', sans-serif;
-    background-color: #f6f6f6;
+    background-color: #f9f9f9;
     font-weight: normal;
+    line-height: 1.2em;
 }
 #header {
     width: 100%;
     text-align: center;
     font-family: 'Chivo', sans-serif;
-    padding: 45px;
+    padding: 80px 45px 55px 45px;
 }
 #nav {
     width: 60vw;
@@ -17,12 +18,19 @@ body {
 }
 h1 {
     text-align: left;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    color: #515151;
 }
 h2 {
     text-align: left;
     font-weight: normal;
     font-size: 1em;
+    color: #727272;
+    line-height: 1.4em;
+}
+h3{
+    margin-top: 1em;
+    font-size: 1.4em;
 }
 h4 {
     color: #727272;
@@ -81,7 +89,7 @@ span {
 
 .feature {
     width: 50vw;
-    padding-bottom: 10px;
+    vertical-align: middle;
 }
 
 figcaption {
@@ -92,17 +100,40 @@ a:link, a:visited {
     text-decoration: none;
 }
 .project {
-    font-size: 14px;
-    padding-top: 10px;
+    font-size: 13.5px;
+    padding: 10px 0 2px 0;
     font-weight: bold;
 }
 .desc {
     color: #8c8c8c;
     font-size: 12.5px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.caption {
+    background-color: #e5e5e5;
+    padding: 5px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.me {
+    width: 300px;
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+
+.footer {
+    text-align: center;
+    padding-top:30px;
+    height: 100px;
+    font-size: 0.7em;
+    word-spacing: 9px;
+    color: #727272;
 }
 
 @media only screen and (max-width: 1010px) {
+    
     .container, #nav {
         width: 80vw;
     }  
