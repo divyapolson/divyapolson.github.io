@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo:300,400,400i,700,700i');
-
 body {
     font-family: 'Chivo', sans-serif;
     background-color: #f9f9f9;
@@ -15,22 +14,26 @@ body {
 #nav {
     width: 60vw;
     margin: auto;
+    text-align: left;
+}
+#links {
+    width: 90px;
+    position: fixed;
+    background-color: blue;
 }
 h1 {
-    text-align: left;
     padding-bottom: 15px;
     color: #515151;
 }
 h2 {
-    text-align: left;
     font-weight: normal;
     font-size: 1em;
     color: #727272;
     line-height: 1.4em;
 }
-h3{
+h3 {
     margin-top: 1em;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 h4 {
     color: #727272;
@@ -38,13 +41,18 @@ h4 {
     font-size: 0.9em;
     padding-top: 5px;
 }
-
+p {
+    color: #333333;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
 span {
     font-size: 0.8em;
     color: #727272;
 }
-
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,8 +64,8 @@ span {
 .content {
     width: 100%;
     height: 100%;
-    margin: 0px auto;
-
+    margin: 0 auto;
+    padding-bottom: 5%;
 }
 .categories {
     display: flex;
@@ -68,12 +76,11 @@ span {
     flex: 0 0 20%;
     margin: 5px;
 }
-
 .picture {
     max-width: 270px;
     max-height: 180px;
-    width: 18vw;
-    height: 12vw;
+    width: 20vw;
+    height: 13.33vw;
     border-radius: 3px;
 }
 .picture:hover {
@@ -86,57 +93,80 @@ span {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
 .feature {
     width: 50vw;
     vertical-align: middle;
 }
-
 figcaption {
     text-align: left;
 }
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
     text-decoration: none;
 }
 .project {
-    font-size: 13.5px;
+    font-size: 15px;
     padding: 10px 0 2px 0;
     font-weight: bold;
 }
 .desc {
     color: #8c8c8c;
-    font-size: 12.5px;
+    font-size: 14px;
     padding-bottom: 25px;
 }
-
+.topic {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.details {
+    width: 50vw;
+}
+.etc {
+    width: 50vw;
+}
 .caption {
     background-color: #e5e5e5;
     padding: 5px;
     font-style: italic;
     font-size: 0.9em;
 }
-
 .me {
     width: 300px;
     float: left;
     padding: 20px 20px 20px 0;
 }
-
 .footer {
     text-align: center;
-    padding-top:30px;
-    height: 100px;
+    padding-bottom: 5%;
     font-size: 0.7em;
     word-spacing: 9px;
     color: #727272;
 }
-
-@media only screen and (max-width: 1010px) {
-    
-    .container, #nav {
+@media only screen and (min-width: 931px) and (max-width: 1400px) {
+    .container,
+    #nav {
+        width: 65vw;
+    }
+    .picture {
+        max-width: 50vw;
+        max-height: 33.33vw;
+        width: 30vw;
+        height: 20vw;
+    }
+    .feature {
+        width: 60vw;
+        height: 40vw;
+    }
+    .details {
+        width: 60vw;
+    }
+}
+@media only screen and (max-width: 930px) {
+    .container,
+    #nav {
         width: 80vw;
-    }  
+    }
     .categories {
         flex-direction: column;
         align-items: center;
@@ -147,9 +177,11 @@ a:link, a:visited {
         width: 80vw;
         height: 53.33vw;
     }
-    
     .feature {
         width: 80vw;
         height: 53.33vw;
+    }
+    .details {
+        width: 80vw;
     }
 }
