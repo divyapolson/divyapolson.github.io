@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo:300,400,400i,700,700i');
 body {
     font-family: 'Chivo', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     font-weight: normal;
     line-height: 1.2em;
 }
@@ -12,7 +12,7 @@ body {
     padding: 80px 45px 55px 45px;
 }
 #nav {
-    width: 60vw;
+    width: 70vw;
     margin: auto;
     text-align: left;
 }
@@ -21,6 +21,29 @@ body {
     position: fixed;
     background-color: blue;
 }
+.banner {
+    width: 100%;
+    background-color: grey;
+    position: fixed;
+    height: 40px;
+    word-spacing: 15px;
+}
+.banner-links {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.banner-links a:link, .banner-links a:visited, 
+.banner-links a:active {
+    color: #FFF;
+}
+
+.banner-links a:hover {
+    opacity:0.8;
+}
+
 h1 {
     padding-bottom: 15px;
     color: #515151;
@@ -46,7 +69,7 @@ p {
     font-size: 1.1em;
     line-height: 1.4em;
 }
-span {
+.span {
     font-size: 0.8em;
     color: #727272;
 }
@@ -59,7 +82,17 @@ span {
 }
 .container {
     margin: 0 auto;
-    width: 60vw;
+    width: 50vw;
+}
+
+.about-container {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.bigcontainer {
+    margin: 0 auto;
+    width: 70vw;
 }
 .content {
     width: 100%;
@@ -74,19 +107,27 @@ span {
 }
 .col {
     flex: 0 0 20%;
-    margin: 5px;
+    /*margin: 5px;*/
+}
+.title-bar {
+    height: 38px;
+    margin-top: -9px;
+    border-radius:3px;
+    display: flex;
 }
 .picture {
-    max-width: 270px;
-    max-height: 180px;
+    max-width: 375px;
+    max-height: 250px;
     width: 20vw;
     height: 13.33vw;
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
-.picture:hover {
-    -webkit-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
+
+.pop:hover {
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
@@ -97,8 +138,12 @@ span {
     width: 50vw;
     vertical-align: middle;
 }
-figcaption {
-    text-align: left;
+.big {
+    width: 100vw;
+    height: 33vw;
+    max-height: 33vw;
+    vertical-align: middle;
+    padding-top: 40px;
 }
 a:link,
 a:visited {
@@ -110,9 +155,17 @@ a:visited {
     padding: 10px 0 2px 0;
     font-weight: bold;
 }
+.project-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 9px;
+    padding-bottom: 8px;
+    align-self: flex-end;
+}
 .desc {
     color: #8c8c8c;
     font-size: 14px;
+    padding-top: 9px;
     padding-bottom: 25px;
 }
 .topic {
@@ -120,6 +173,7 @@ a:visited {
     font-weight: bold;
 }
 .details {
+    padding-top: 50px;
     width: 50vw;
 }
 .etc {
@@ -132,7 +186,7 @@ a:visited {
     font-size: 0.9em;
 }
 .me {
-    width: 300px;
+    width: 250px;
     float: left;
     padding: 20px 20px 20px 0;
 }
@@ -141,16 +195,32 @@ a:visited {
     padding-bottom: 5%;
     font-size: 0.7em;
     word-spacing: 9px;
+}
+
+.footer a:link, .footer a:visited, 
+.footer a:active {
     color: #727272;
 }
+
+.footer a:hover {
+    color: black;
+}
+
+.credit {
+    padding-top: 10px;
+    word-spacing: 0.8px;
+    color: #727272;
+    font-size: 13px;
+}
+
 @media only screen and (min-width: 931px) and (max-width: 1400px) {
     .container,
     #nav {
-        width: 65vw;
+        width: 70vw;
     }
     .picture {
-        max-width: 50vw;
-        max-height: 33.33vw;
+        max-width: 60vw;
+        max-height: 40vw;
         width: 30vw;
         height: 20vw;
     }
