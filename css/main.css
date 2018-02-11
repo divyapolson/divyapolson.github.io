@@ -27,6 +27,7 @@ body {
     position: fixed;
     height: 40px;
     word-spacing: 15px;
+    z-index: 60;
 }
 .banner-links {
     color: white;
@@ -64,7 +65,7 @@ h4 {
     font-size: 0.9em;
     padding-top: 5px;
 }
-p {
+p, ol, li {
     color: #333333;
     font-size: 1.1em;
     line-height: 1.4em;
@@ -84,12 +85,12 @@ p {
     margin: 0 auto;
     width: 50vw;
 }
-
 .about-container {
+    background-color: #F1F1F1;
     margin: 0 auto;
+    padding: 3%;
     width: 70vw;
 }
-
 .bigcontainer {
     margin: 0 auto;
     width: 70vw;
@@ -150,11 +151,6 @@ a:visited {
     color: black;
     text-decoration: none;
 }
-.project {
-    font-size: 15px;
-    padding: 10px 0 2px 0;
-    font-weight: bold;
-}
 .project-title {
     font-size: 1.3em;
     font-weight: bold;
@@ -177,7 +173,10 @@ a:visited {
     width: 50vw;
 }
 .etc {
-    width: 50vw;
+    padding:0 15px;
+}
+.bigger {
+    padding: 50px 0 50px 0;
 }
 .caption {
     background-color: #e5e5e5;
@@ -237,6 +236,9 @@ a:visited {
     #nav {
         width: 80vw;
     }
+    .about-container {
+        width: 80vw;
+    }
     .categories {
         flex-direction: column;
         align-items: center;
@@ -252,6 +254,86 @@ a:visited {
         height: 53.33vw;
     }
     .details {
+        width: 80vw;
+    }
+}
+.swiper-container {
+        position: relative;
+    width: 75vw;
+    left: calc(-38vw + 50%);
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+
+* {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+       -ms-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+.misc-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 900px;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.big-cell img {
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+
+.cell img {
+  display: block;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: row; 
+  }
+  .cell {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    display: flex;
+   flex-direction: column; 
+  }
+    .responsive-image {
+            margin: 0 auto;
         width: 80vw;
     }
 }
