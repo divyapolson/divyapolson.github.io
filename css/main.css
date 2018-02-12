@@ -86,10 +86,9 @@ p, ol, li {
     width: 50vw;
 }
 .about-container {
-    background-color: #F1F1F1;
     margin: 0 auto;
-    padding: 3%;
     width: 70vw;
+    min-height: 30vw;
 }
 .bigcontainer {
     margin: 0 auto;
@@ -255,6 +254,11 @@ a:visited {
     }
     .details {
         width: 80vw;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .me {
+        width: 78vw;
     }
 }
 .swiper-container {
