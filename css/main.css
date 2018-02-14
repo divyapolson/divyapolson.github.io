@@ -308,11 +308,11 @@ a:link, a:visited {
 }
 @media (min-width: 30em) {
   .modaloverlay .modal {
-    height: 45%;
+    height: auto;
     margin: 15% auto;
     max-height: 57em;
     max-width: 66em;
-    width: 65%;
+    width: 55%;
   }
 }
 .modaloverlay .modal > iframe, .modaloverlay .modal > div {
