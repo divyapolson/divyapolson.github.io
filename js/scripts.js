@@ -1,8 +1,8 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper1 = new Swiper('.swiper1', {
       slidesPerView: 3,
       spaceBetween: 40,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination1',
         clickable: true,
       },
       navigation: {
@@ -21,8 +21,6 @@ var swiper = new Swiper('.swiper-container', {
       }
     });
 
-/*
-
 var swiper2 = new Swiper('.swiper2', {
       slidesPerView: 1,
       pagination: {
@@ -32,7 +30,5 @@ var swiper2 = new Swiper('.swiper2', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      }
+      },
     });
-
-*/

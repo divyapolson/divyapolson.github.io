@@ -39,37 +39,53 @@
                 <h3><span style="color:#1C4CBD;">Tradeback</span> <span class="span">Fall 2017</span></h3>
                 <h4>The Art of Web Programming, Computer Science Department, UIUC</h4>
                 <br/>
-                <br/>
                 <p><b>tools:</b> React.js, SCSS, Node.js, Express, MongoDB, Webpack, Babel, Heroku, Sketch</p>
                 <br/>
                 <p class="topic">project overview</p>
                 <br/>
-                <p>Tradeback is a digital </p>
+                <p>Tradeback is a web-based trading platform where users can <b>exchange items and services</b>. Websites like eBay and Craiglist offer a similar consumer-driven marketplace, but they emphasize purely monetary-based transactions. With Tradeback, instead of offering money for a job, you could offer a service in return. For example, if I need calculus tutoring but don’t have money to spend, I could create a post offering chemistry tutoring in exchange for the work. Tasks and items are represented by trading “cards”, and users can see their transaction history and gain a reputation. This encourages users to <b>give back to others by sharing their skills and expertise</b>, and fosters a sense of community and cooperation between members. </p>
                 <br/>
+                <p class="topic">target audience</p>
+                <br/>
+                <p>Our primary target audience is college students or young adults. Tradeback is a good option for those who are tight on money or have skills they’d like to offer. It can be especially beneficial to people doing freelance work as a living.</p>
+                <br/>
+                <p class="topic">prototyping</p>
+                <br/>
+                <p>We started out with simple wireframes for core website components such as browsing and viewing post details, trading cards, and user profiles.</p>
                 <br/>
                 <div>
                     <img class="feature" src="../assets/tradeback/wireframe.png" />
+                    <figcaption class="caption">Homepage wireframe</figcaption>
                 </div>
+                <br/>
+                <p>Based on informal user feedback, we made some adjustments to our prototype, including adding a transaction history on user profiles and a "comment" area for users to add additional details on trade offers. The following screens are our medium-fidelity prototypes.</p>
+                <br/>
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../assets/tradeback/home.png" /></div>
+                        <div class="swiper-slide"><img src="../assets/tradeback/create.png" /></div>
+                                     <div class="swiper-slide"><img src="../assets/tradeback/detail.png" /></div>
+                                                <div class="swiper-slide"><img src="../assets/tradeback/trade.png" /></div>
+                                                <div class="swiper-slide"><img src="../assets/tradeback/profile.png" /></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination2"></div>
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+                <br/>
+                <p class="topic">final implementation</p>
+                <br/>
+                <p>We used React to create a responsive frontend for our platform, and Node and Express on the backend. The data for our users and posts was stored in a MongoDB database. We implemented trading functionality, user authentication, messaging, and smart searching/filtering.</p>
                 <br/>
                 <div>
-                    <img class="feature" src="../assets/tradeback/design.png" />
+                    <img class="feature" src="../assets/tradeback/gif.gif" />                    <figcaption class="caption">Demo of homepage</figcaption>
                 </div>
                 <br/>
-                <div>
-                    <img class="feature" src="../assets/tradeback/create.png" />
-                </div>
-                <br/>
-                <p class="topic">user interactions</p>
-                <br/>
-                <div>
-                    <img class="feature" src="../assets/tradeback/gif.gif" />
-                </div>
-                <br/>
-                <p>See it in action on Github!</p>
+                <p>See it in action on <b><a href="https://github.com/divyapolson/tradeback" target="_blank">Github</a></b>!</p>
                 <br/>
                 <p class="topic">reflection</p>
                 <br/>
-                <p>My contributions were front-end development and lead UX design. Aside from implementing the front-end in React, I also got the opportunity to interact with data in our MongoDB database. If we had more time, we would have developed an in-application chat so users could discuss specifics of their trade or negotiate further (instead of linking to Facebook Messenger). We also would implement a rating system so that users can review other users’ services and rate their transaction. With a few more iterations, it would then be useful to do some further usability testing and identify areas of improvement. Overall, I liked the originality of our service-based marketplace and believe it could be popular among college-age students. </p>
+                <p>My contributions were front-end development and lead UX design. Aside from implementing the front-end in React, I also got the opportunity to interact with data in our MongoDB database. If we had more time, we would have developed an in-application chat so users could discuss specifics of their trade or negotiate further (instead of linking to Facebook Messenger). We also would implement a rating system so that users can review other users’ services and rate their transaction. With a few more iterations, it would be useful to do some further usability testing and identify areas of improvement. Overall, I learned a lot about web development and community markets, and I could see Tradeback being successful among college-age adults.</p>
             </div>
         </div>
     </div>
