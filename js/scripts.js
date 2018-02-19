@@ -19,7 +19,7 @@ var swiper1 = new Swiper('.swiper1', {
           spaceBetween: 20,
         },
       }
-    });
+});
 
 var swiper2 = new Swiper('.swiper2', {
       slidesPerView: 1,
@@ -31,4 +31,4 @@ var swiper2 = new Swiper('.swiper2', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });
+});
