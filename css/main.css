@@ -35,7 +35,9 @@ body {
     padding: 10px;
     margin-left: 15px;
 }
-.banner-links a:link, .banner-links a:visited, .banner-links a:active {
+.banner-links a:link,
+.banner-links a:visited,
+.banner-links a:active {
     color: #FFF;
 }
 .banner-links a:hover {
@@ -61,7 +63,9 @@ h4 {
     font-size: 0.9em;
     padding-top: 5px;
 }
-p, ol, li {
+p,
+ol,
+li {
     color: #333333;
     font-size: 1em;
     line-height: 1.4em;
@@ -70,7 +74,9 @@ p, ol, li {
     font-size: 0.8em;
     color: #727272;
 }
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -78,6 +84,7 @@ p, ol, li {
 .container {
     margin: 0 auto;
     width: 50vw;
+    padding-bottom: 5%;
 }
 .about-container {
     margin: 0 auto;
@@ -144,7 +151,8 @@ p, ol, li {
     vertical-align: middle;
     padding-top: 40px;
 }
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
     text-decoration: none;
 }
@@ -186,13 +194,38 @@ a:link, a:visited {
     float: left;
     padding: 20px 20px 20px 0;
 }
+.next {
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #e5e5e5;
+    border: 1px solid black;
+}
+.next:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+/*
+.next:hover {
+    background-color: #5b5b5b;
+}
+.next:hover a {
+    color: white;
+}
+*/
+
 .footer {
     text-align: center;
     padding-bottom: 5%;
     font-size: 0.7em;
     word-spacing: 9px;
 }
-.footer a:link, .footer a:visited, .footer a:active {
+.footer a:link,
+.footer a:visited,
+.footer a:active {
     color: #727272;
 }
 .footer a:hover {
@@ -205,7 +238,8 @@ a:link, a:visited {
     font-size: 13px;
 }
 @media only screen and (min-width: 931px) and (max-width: 1400px) {
-    .container, #nav {
+    .container,
+    #nav {
         width: 70vw;
     }
     .picture {
@@ -223,7 +257,8 @@ a:link, a:visited {
     }
 }
 @media only screen and (max-width: 930px) {
-    .container, #nav {
+    .container,
+    #nav {
         width: 80vw;
     }
     .about-container {
@@ -247,6 +282,8 @@ a:link, a:visited {
         width: 80vw;
     }
 }
+
+}
 @media only screen and (max-width: 580px) {
     .me {
         width: 78vw;
@@ -259,7 +296,7 @@ a:link, a:visited {
 .misc-container {
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 900px; 
+    max-width: 900px;
 }
 .responsive-image {
     max-width: 100%;
@@ -274,63 +311,64 @@ a:link, a:visited {
     padding: 20px;
 }
 .cta {
-  display: inline-block;
+    display: inline-block;
 }
 .modaloverlay {
-  background: rgba(0, 0, 0, 0.8);
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  z-index: -1;
-  display: none;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    z-index: -1;
+    display: none;
 }
 .modaloverlay:target {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-  z-index: 99999;
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 99999;
 }
 .modaloverlay .modal {
-  background-color: white;
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
-  padding: 3em;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 3em;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 @media (min-width: 30em) {
-  .modaloverlay .modal {
-    height: auto;
-    margin: 15% auto;
-    max-height: 57em;
-    max-width: 66em;
-    width: 55%;
-  }
+    .modaloverlay .modal {
+        height: auto;
+        margin: 15% auto;
+        max-height: 57em;
+        max-width: 66em;
+        width: 55%;
+    }
 }
-.modaloverlay .modal > iframe, .modaloverlay .modal > div {
-  border: none;
-  width: 100%;
-  height: 100%;
+.modaloverlay .modal > iframe,
+.modaloverlay .modal > div {
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 .modaloverlay .close {
-  background-color: grey;
-  color: white;
-  font-size: 34px;
-  padding: 14px 12px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  text-decoration: none;
-  top: 0;
-  z-index: 1;
+    background-color: grey;
+    color: white;
+    font-size: 34px;
+    padding: 14px 12px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
 }
 .swiper-container {
     position: relative;
@@ -338,8 +376,17 @@ a:link, a:visited {
     left: calc(-38vw + 50%);
     height: 100%;
 }
+.swiper2 {
+    width: 100%;
+    left: 0;
+}
+.full-size {
+    max-height: 100%;
+    max-width: 100%;
+}
 .swiper-slide {
     text-align: center;
+    overflow: hidden;
     font-size: 18px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -389,12 +436,10 @@ a:link, a:visited {
         padding: 20% 20% 5% 20%;
     }
 }
-
 img {
-  opacity: 1;
-  transition: opacity 0.3s;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
-
 img[data-src] {
-  opacity: 0;
+    opacity: 0;
 }
