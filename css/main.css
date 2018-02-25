@@ -50,7 +50,7 @@ h1 {
 }
 h2 {
     font-weight: normal;
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: #727272;
     line-height: 1.4em;
 }
@@ -164,7 +164,7 @@ a:link, a:visited {
 }
 .desc {
     color: #8c8c8c;
-    font-size: 0.8em;
+    font-size: 0.85em;
     padding-top: 9px;
     padding-bottom: 25px;
 }
@@ -183,7 +183,7 @@ a:link, a:visited {
     background-color: #e5e5e5;
     padding: 5px;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .me {
     width: 250px;
@@ -221,7 +221,7 @@ a:link, a:visited {
     color: #727272;
     font-size: 13px;
 }
-@media only screen and (min-width: 931px) and (max-width: 1400px) {
+@media only screen and (min-width: 901px) and (max-width: 1280px) {
     .container,
     #nav {
         width: 70vw;
@@ -240,7 +240,7 @@ a:link, a:visited {
         width: 60vw;
     }
 }
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 900px) {
     .container,
     #nav {
         width: 80vw;
