@@ -50,7 +50,7 @@ h1 {
 }
 h2 {
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.9em;
     color: #727272;
     line-height: 1.4em;
 }
@@ -163,7 +163,7 @@ a:link, a:visited {
 }
 .desc {
     color: #8c8c8c;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-top: 9px;
     padding-bottom: 25px;
 }
