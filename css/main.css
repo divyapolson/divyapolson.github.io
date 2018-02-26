@@ -127,7 +127,6 @@ p, ol, li {
   display: block;
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
 }
 .pop:hover {
     -webkit-transform: scale(1.04);
@@ -297,6 +296,17 @@ a:link, a:visited {
     .details {
         width: 80vw;
     }
+    .pop {
+        padding-bottom: 10%;
+    }
+    .pop:hover .desc {
+        transition: 0s;
+    }
+    .pop:hover {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }
 @media only screen and (max-width: 580px) {
     .me {
@@ -305,9 +315,6 @@ a:link, a:visited {
     .etc-title {
         font-size: 3em;
         padding: 5%;
-    }
-    .pop:hover .desc {
-        transition: 0s;
     }
 }
 .misc-container {
