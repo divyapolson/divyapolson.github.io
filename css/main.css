@@ -123,13 +123,11 @@ p, ol, li {
     text-align: center;
     line-height: 50px;
 }
-.title-bar {
-    background-color:#fff;
-    box-shadow: -1px 8px 30px -2px #e2e2e2;
-    height: 50px;
-    margin-top: -8px;
-    border-radius: 3px;
-    display: flex;
+.pop {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
 }
 .pop:hover {
     -webkit-transform: scale(1.04);
@@ -141,53 +139,58 @@ p, ol, li {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-.pop {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding-bottom: 50px;
+.title-bar {
+    background-color:#fff;
+    box-shadow: -1px 8px 30px -2px #e2e2e2;
+    height: 50px;
+    margin-top: -8px;
+    border-radius: 3px;
+    display: flex;
 }
 .project-title {
     display: block;
     font-family: 'Chivo', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
-    padding-left: 9px;
+    padding-left: 10px;
     padding-bottom: 13px;
     align-self: flex-end;
 }
 .desc {
-    display: none;
-    z-index: 99;
+    opacity:0;
     color: #afafaf;
+    background-color:#fff;
+    box-shadow: -1px 8px 30px -2px #e2e2e2;
     font-size: 0.85em;
+    padding: 10px; 
+    margin-top: -5px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+    width:100%;
 }
 .pop:hover .title-bar {
-    transition: 0.5s;
-    height: 90px;
-    margin-top: -38px;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    box-shadow: none; 
 }
 .pop:hover .project-title {
     color: white !important;
     transition: 0.5s;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
     font-size: 1.4em;
     padding-bottom: 0;
 }
 .pop:hover .desc {
-  display: block;
-  margin-top: -62px;
-  padding: 15px; 
-  transition-delay: 15s;
+    position: absolute;
+    opacity: 1;
+    transition: 0.9s ease-out 0s;
 }
 .feature {
     width: 50vw;
     vertical-align: middle;
 }
 .big {
-    width: 100vw;
+    width: 100vw; 
     height: 33vw;
     max-height: 33vw;
     vertical-align: middle;
@@ -302,6 +305,9 @@ a:link, a:visited {
     .etc-title {
         font-size: 3em;
         padding: 5%;
+    }
+    .pop:hover .desc {
+        transition: 0s;
     }
 }
 .misc-container {
