@@ -108,12 +108,6 @@ p, ol, li {
 .col {
     flex: 0 0 20%;
 }
-.title-bar {
-    height: 38px;
-    margin-top: -9px;
-    border-radius: 3px;
-    display: flex;
-}
 .picture {
     max-width: 375px;
     max-height: 250px;
@@ -129,6 +123,14 @@ p, ol, li {
     text-align: center;
     line-height: 50px;
 }
+.title-bar {
+    background-color:#fff;
+    box-shadow: -1px 8px 30px -2px #e2e2e2;
+    height: 50px;
+    margin-top: -8px;
+    border-radius: 3px;
+    display: flex;
+}
 .pop:hover {
     -webkit-transform: scale(1.04);
     -ms-transform: scale(1.04);
@@ -138,6 +140,47 @@ p, ol, li {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+}
+.pop {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.project-title {
+    display: block;
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 9px;
+    padding-bottom: 13px;
+    align-self: flex-end;
+}
+.desc {
+    display: none;
+    z-index: 99;
+    color: #afafaf;
+    font-size: 0.85em;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.pop:hover .title-bar {
+    transition: 0.5s;
+    height: 90px;
+    margin-top: -38px;
+}
+.pop:hover .project-title {
+    color: white !important;
+    transition: 0.5s;
+    margin-bottom: 70px;
+    font-size: 1.4em;
+    padding-bottom: 0;
+}
+.pop:hover .desc {
+  display: block;
+  margin-top: -62px;
+  padding: 15px; 
+  transition-delay: 15s;
 }
 .feature {
     width: 50vw;
@@ -153,20 +196,6 @@ p, ol, li {
 a:link, a:visited {
     color: black;
     text-decoration: none;
-}
-.project-title {
-    font-family: 'Chivo', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding-left: 9px;
-    padding-bottom: 7px;
-    align-self: flex-end;
-}
-.desc {
-    color: #8c8c8c;
-    font-size: 0.85em;
-    padding-top: 9px;
-    padding-bottom: 25px;
 }
 .topic {
     font-size: 1.3em;
@@ -221,7 +250,7 @@ a:link, a:visited {
     color: #727272;
     font-size: 13px;
 }
-@media only screen and (min-width: 901px) and (max-width: 1280px) {
+@media only screen and (min-width: 901px) and (max-width: 1350px) {
     .container,
     #nav {
         width: 70vw;
