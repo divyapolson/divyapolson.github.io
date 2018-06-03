@@ -111,8 +111,8 @@ p, ol, li {
 .picture {
     max-width: 375px;
     max-height: 250px;
-    width: 20vw;
-    height: 13.33vw;
+    width: 21vw;
+    height: 14vw;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -129,9 +129,9 @@ p, ol, li {
   height: auto;
 }
 .pop:hover {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    transform: scale(1.04);
+    -webkit-transform: scale(1.00);
+    -ms-transform: scale(1.00);
+    transform: scale(1.00);
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
