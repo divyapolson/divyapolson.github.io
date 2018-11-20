@@ -5,130 +5,114 @@
     <title>Divya Polson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/fontello.min.css" />
     <script async src="js/ga.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div id="nav">
-            <div id="intro">
-                <h1><a href="/">Divya Polson</a></h1>
-                <h2>Product designer and full-stack developer with a love for data and visual communication. <br/>Software engineer @ Target and recent graduate from UIUC. <a href="content/about">More</a></h2>
-            </div>
-        </div>
-    </div>
-    <div class="bigcontainer">
-        <div class="div content">
-            <div class="categories">
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/matches"><img class="picture" data-src="assets/matches/matches1.png" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#61C176;">Matches</div>
-                            </div>
-                            <div class="desc">Tinder-inspired app to discover and foster community play</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/shopify"><img class="picture" data-src="assets/shopify/shopify.png" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color: #F59959;">Shopify</div>
-                            </div>
-                            <div class="desc">Joining in-store shopping with the independence of e-commerce</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="/"><img class="picture" data-src="assets/emotigo/emotigo.png" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#3FB1C8;">EmotiGo</div>
-                            </div>
-                            <div class="desc">iOS app promoting open spaces and positive well-being <b>(coming soon)</b></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/superwoman"><img class="picture" data-src="assets/superwoman/superwoman1.png" onmouseover="this.src='assets/superwoman/hover.gif'"
-onmouseout="this.src='assets/superwoman/superwoman1.png'"/>
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#F570AD;">Superwoman</div>
-                            </div>
-                            <div class="desc">Empowering women through wearable technology</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/saferoute"><img class="picture" data-src="assets/saferoute/saferoute.png" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#528691;">SafeRoute</div>
-                            </div>
-                            <div class="desc">Open-source web app to enable safer pedestrian travel</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/vrspeed"><img class="picture" data-src="assets/vrspeed/vrspeed1.png" onmouseover="this.src='assets/vrspeed/vrspeed.gif'"
-onmouseout="this.src='assets/vrspeed/vrspeed1.png'"/>
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#9964D7;">VR Perception Study</div>
-                            </div>
-                            <div class="desc">Psychophysics experiment on speed perception in virtual reality spaces</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="/"><img class="picture" data-src="assets/resnovae/resnovae1.png" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#F36A6A;">Res Novae</div>
-                            </div>
-                            <div class="desc">Python game teaching concepts in biology and ecology <b>(coming soon)</b></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/tradeback"><img class="picture" data-src="assets/tradeback/tradeback2.png" onmouseover="this.src='assets/tradeback/tradeback_hover.gif'"
-onmouseout="this.src='assets/tradeback/tradeback2.png'"/>
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#4E9ADE;">Tradeback</div>
-                            </div>
-                            <div class="desc">Bringing bartering to the digital age with an online trading marketplace</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="pop">
-                        <a href="content/etc"><img class="picture" data-src="assets/misc/misc1.png" onmouseover="this.src='assets/misc/misc_hover.gif'"
-onmouseout="this.src='assets/misc/misc1.png'" />
-                            <div class="title-bar">
-                                <div class="project-title" style="color:#82A35E;">Sketchbook</div>
-                            </div>
-                            <div class="desc">An exploration in digital illustration</div>
-                        </a>
-                    </div>
+    <div class="container">
+        <div id="header">
+            <div id="nav">
+                <h1 id="name">Divya Polson</h1>
+                <div id="links">
+                    <p><a style="font-weight: 700;" href="/">projects</a>
+                        <a href="/about">about</a></p>
                 </div>
             </div>
+            <h2>Product designer and developer with a love of data and visual communication. <span style="opacity: 0.4">Currently creating things @ Target.</span> </h2>
         </div>
+
+        <div class="projects">
+
+            <div class="project">
+                <img class="project-image" data-src="assets/matches/matches1.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Matches</h3>
+                    <h3 class="text project-desc">Tinder-inspired app to discover and foster community play</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/shopify/shopify.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Shopify</h3>
+                    <h3 class="text project-desc">Joining in-store shopping with the independence of e-commerce</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/emotigo/emotigo.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Emotigo</h3>
+                    <h3 class="text project-desc">iOS app promoting open spaces <span style="opacity: 0.5;">(coming soon)</span></h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/superwoman/superwoman.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Superwoman</h3>
+                    <h3 class="text project-desc">Empowering women through wearable technology</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/saferoute/saferoute.png">
+                <div class="overlay">
+                    <h3 class="text project-title">SafeRoute</h3>
+                    <h3 class="text project-desc">Open-source web app to enable safer pedestrian travel</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/vrspeed/vrspeed.png">
+                <div class="overlay">
+                    <h3 class="text project-title">VR Perception Study</h3>
+                    <h3 class="text project-desc">Psychophysics experiment on speed perception in virtual reality</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/resnovae/resnovae.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Res Novae</h3>
+                    <h3 class="text project-desc">Python game teaching  biology and ecology concepts <span style="opacity: 0.5;">(coming soon)</span></h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/tradeback/tradeback.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Tradeback</h3>
+                    <h3 class="text project-desc">Bartering in the digital age with an online trading marketplace</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project-image" data-src="assets/misc/misc.png">
+                <div class="overlay">
+                    <h3 class="text project-title">Sketchbook</h3>
+                    <h3 class="text project-desc">An exploration in digital illustration</h3>
+                </div>
+            </div>
+
+        </div>
+
     </div>
+
+
     <div class="footer">
-        <a href="mailto:dpolson@illinois.edu" target="_blank"><i class="icon-mail"></i></a>
+        <a href="mailto:divyapolson@gmail.com" target="_blank"><i class="icon-mail"></i></a>
         <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
         <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
-        <a href="https://www.behance.net/divyapolso99ba" target="_blank"><i class="icon-behance"></i></a>
         <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
         <br/>
         <p class="credit"> © Divya Polson 2018</p>
     </div>
     <script src="js/scripts.js"></script>
+
+
 </body>
 
 </html>
