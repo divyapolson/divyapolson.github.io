@@ -5,82 +5,103 @@
     <title>Divya Polson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
     <link rel="stylesheet" href="../css/fontello.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/css/swiper.min.css">
     <script async src="../js/ga.js"></script>
 </head>
 
 <body>
-    <div class="banner" style="background-color:#140232;">
-        <p class="banner-links"><a href="/">works</a> <a href="../about">about </a><a class="cta" href="#contact">contact</a></p>
-    </div>
-    <div id="contact" class="modaloverlay">
-        <div class="modal">
-            <a href="#close" class="close">&times;</a>
-            <div>
-                <h1>Hello!</h1>
-                <br/>
-                <p>Whether you have questions or just want to say hi, feel free to add me on <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><b>Linkedin</b></a> or shoot me an <a href="mailto:divyapolson@gmail.com" target="_blank"><b>email</b></a>. I'm always open to new opportunities and collaborations.
-                    <br/>
-                    <br/>Looking forward to connecting!</p>
+    <div class="container">
+        <div id="header">
+            <div id="nav">
+                <h1 id="name"><a href="/">Divya Polson</a></h1>
+                <div id="links">
+                    <p><a href="/">projects</a>
+                        <a href="/about">about</a></p>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="title-img">
+                <img class="feature" data-src="../assets/vrspeed/big.png" />
+                <div class="heading">
+                    <h2>Virtual Reality Perception</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <img class="big" data-src="../assets/vrspeed/big.png" />
-    <div class="container">
         <div class="content">
-            <div class="details">
-                <h3><span style="color:#140232;">Virtual Reality Perception Study</span> <span class="span">January 2017 - Present</span></h3>
-                <h4>Vision Lab, Psychology Department, UIUC</h4>
-                <br/>
-                <p><b>tools:</b> Oculus Rift, Unity game engine, C#</p>
-                <br/>
-                <p class="topic">project overview</p>
+            <section>
+                <div class="desc">
+                    <p style="font-weight: bold; opacity: 0.8;">January 2017 - May 2018</p>
+                    <br/>
+                    <p><b>Vision Lab, Psychology Department, UIUC</b></p>
+                    <br/>
+                    <p><b>Tools:</b> Oculus Rift, Unity game engine, C#, R</p>
+                </div>
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <section>
+                <p class="topic">Overview</p>
                 <br/>
                 <p>As a research assistant in the Vision Lab, my role has been to help develop and pilot a simulated roadway for a psychophysics experiment. The experiment <b>leverages virtual reality technology to create a first-person driving simulation.</b> Participants experience 3D driving simulation, and are asked to assess their speed in relation to a target speed. In the trials, subjects could be asked to gauge their speed against any two of the four test speeds: 35, 45, 55, and 70 mph. A calibration process allows for a customized viewpoint based on the participant’s sitting height. Throughout the trials of the experiment, the height of the participant’s viewpoint changes incrementally (from baseline height, 7 cm above baseline, and 7 cm below baseline) along with the speed of the driving. Following the simulation, subjects were also asked to complete a few questionnaires that inquired about demographics, prior experience with games (especially in virtual reality), and reported any simulator sickness they experienced.
-                    <br/>
                     <p>
                         <br/>
-                        <p class="topic">research goals</p>
-                        <br/>
-                        <p>The study was designed in order to address two primary research questions:
-                            <br/>1) How accurate is a subject’s perception of their speed in a vehicle?
-                            <br/>2) How does a participant’s viewpoint affect their speed perception?
-                            <br/>
-                            <p>
-                                <br/>The findings will help us <b>understand if speeds are underestimated within the context of virtual reality systems</b>, and <b>if height manipulation can compensate for other judgment discrepancies</b> and lead people to more accurate speed estimates.</p>
-                            <br/>
-                            <p class="topic">trial demo</p>
-                            <br/>
-                            <iframe style="border:none;" src="https://drive.google.com/file/d/19-iwNEBSHAMWNQJTp99emfZACLPpLpNw/preview" width="100%" height="480"></iframe>
-                            <br/>
-                            <br/>
-                            <br/>
-                            <p class="topic">applications</p>
-                            <br/>
-                            <p>This speed perception study is an important step toward <b>informed virtual reality design, understanding how users interact with virtual reality, and conscious, continued improvement</b> based on these understandings. As virtual reality becomes more and more popular, its accessible reach for the average consumer becomes larger than ever before. At the same time, the results of this experiment have applications for various training programs, such as <b>military and novice driver training</b>. The current prevailing issue in the industry is that many existing 3D simulations have difficulty neatly replicating the mechanics of the real world, and as a consequence, are less effective and can even result in long-term cognitive or physiological harm to the user. Results from this study can help <b>discover what adjustments, such as certain depth and peripheral cues, can make a simulation feel more authentic and true to how human perception operates in the real world.</b> The more realistic a simulation is, the more likely it can successfully serve as a low-cost, effective training option for mainstream users to adopt.
-                            </p>
-                            <br/>
-                            <p>Since the existing research on virtual reality is relatively sparse, this project is filling an important gap in the current literature. Through further iterations of research and testing, we can use our findings to continue to grow our understanding of perception in 3D spaces and improve virtual reality design.</p>
-                            <br/>
-                            <br/>
-                            <div class="next"><a href=" ../content/tradeback">Up Next: <b>Tradeback</b></a>
-                            </div>
+            </section>
+            <section>
+                <p class="topic">Research goals</p>
+                <br/>
+                <p>The study was designed in order to address two primary research questions:
+                    <br/>1) How accurate is a subject’s perception of their speed in a vehicle?
+                    <br/>2) How does a participant’s viewpoint affect their speed perception?
+                    <br/>
+                    <p>
+                        <br/>The findings will help us <b>understand if speeds are underestimated within the context of virtual reality systems</b>, and <b>if height manipulation can compensate for other judgment discrepancies</b> and lead people to more accurate speed estimates.</p>
+                    <br/>
+            </section>
+            <section>
+                <p class="topic">Trial demo</p>
+                <br/>
+                <iframe style="border:none;" src="https://drive.google.com/file/d/19-iwNEBSHAMWNQJTp99emfZACLPpLpNw/preview" width="100%" height="480"></iframe>
+                <br/>
+                <br/>
+                <br/>
+            </section>
+            <section>
+                <p class="topic">Applications</p>
+                <br/>
+                <p>This speed perception study is an important step toward <b>informed virtual reality design, understanding how users interact with virtual reality, and conscious, continued improvement</b> based on these understandings. As virtual reality becomes more and more popular, its accessible reach for the average consumer becomes larger than ever before. At the same time, the results of this experiment have applications for various training programs, such as <b>military and novice driver training</b>. The current prevailing issue in the industry is that many existing 3D simulations have difficulty neatly replicating the mechanics of the real world, and as a consequence, are less effective and can even result in long-term cognitive or physiological harm to the user. Results from this study can help <b>discover what adjustments, such as certain depth and peripheral cues, can make a simulation feel more authentic and true to how human perception operates in the real world.</b> The more realistic a simulation is, the more likely it can successfully serve as a low-cost, effective training option for mainstream users to adopt.
+                </p>
+                <br/>
+                <p>Since the existing research on virtual reality is relatively sparse, this project is filling an important gap in the current literature. Through further iterations of research and testing, we can use our findings to continue to grow our understanding of perception in 3D spaces and improve virtual reality design.</p>
+                <br/>
+
+
+
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="next" <p style="opacity: 1;">Next Up:
+                <span><a href=" ../content/tradeback">Tradeback</a></span></br>
+                <a href="/">All projects</a></p>
             </div>
+
         </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="footer">
-        <a href="mailto:dpolson@illinois.edu" target="_blank"><i class="icon-mail"></i></a>
-        <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
-        <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
-        <a href="https://www.behance.net/divyapolso99ba" target="_blank"><i class="icon-behance"></i></a>
-        <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
-        <br/>
-        <p class="credit"> © Divya Polson 2018</p>
-    </div>
-    <script src="../js/scripts.js"></script>
+        <div class="footer">
+            <a href="mailto:divyapolson@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
+            <br/>
+            <p class="credit"> © Divya Polson 2018</p>
+        </div>
+        <script src="../js/scripts.js"></script>
 </body>
 
 </html>

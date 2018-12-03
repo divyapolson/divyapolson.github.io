@@ -5,40 +5,47 @@
     <title>Divya Polson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
     <link rel="stylesheet" href="../css/fontello.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/css/swiper.min.css">
     <script async src="../js/ga.js"></script>
 </head>
 
 <body>
-    <div class="banner" style="background-color:#F3774E;">
-        <p class="banner-links"><a href="/">works</a> <a href="../about">about </a><a class="cta" href="#contact">contact</a></p>
-    </div>
-
-    <div id="contact" class="modaloverlay">
-        <div class="modal">
-            <a href="#close" class="close">&times;</a>
-            <div>
-                <h1>Hello!</h1>
-                <br/>
-                <p>Whether you have questions or just want to say hi, feel free to add me on
-                    <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><b>Linkedin</b></a> or shoot me an <a href="mailto:divyapolson@gmail.com" target="_blank"><b>email</b></a>. I'm always open to new opportunities and collaborations.
-                    <br/>
-                    <br/>Looking forward to connecting!</p>
+    <div class="container">
+        <div id="header">
+            <div id="nav">
+                <h1 id="name"><a href="/">Divya Polson</a></h1>
+                <div id="links">
+                    <p><a href="/">projects</a>
+                        <a href="/about">about</a></p>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="title-img">
+                <img class="feature" data-src="../assets/shopify/big.png" />
+                <div class="heading">
+                    <h2>Shopify</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <img class="big" data-src="../assets/shopify/big.png" />
-    <div class="container">
         <div class="content">
-            <div class="details">
-                <h3><span style="color:#F27B4A;">Shopify</span> <span class="span">Spring 2017</span></h3>
-                <h4>Human Factors, Industrial Engineering Department, UIUC </h4>
-                <br/>
-                <p><b>tools:</b> Sketch, user interviews, paper prototyping, usability evaluations</p>
-                <br/>
-                <p class="topic">exploring the problem space</p>
+            <section>
+                <div class="desc">
+                    <p style="font-weight: bold; opacity: 0.5;">SPRING 2017</p>
+                    <br/>
+                    <p><b>Human Factors, Industrial Engineering Department, UIUC</b></p>
+                    <br/>
+                    <p><b>Tools:</b> Sketch, user interviews, paper prototyping, usability evaluations</p>
+                </div>
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <section>
+                <p class="topic">Exploring the problem space</p>
                 <br/>
                 <p>For our mobile app, our team wanted to focus on issues relevant to the clothing and retail space. <b>We wanted to create independence for the consumer, reduce the workload on sales associates, and streamline the checkout experience overall.</b> To explore this and identify inefficiencies in the checkout process, we took a field trip to the mall. We quickly ruled out targeting stores like Macy's, where we realized the intentional experience is very customer-personnel-interaction-based. Customers wanted help with purchasing items like jewelry, perfume, and makeup, and we were approached by sales associates offering help almost everywhere.
                     <br/>
@@ -47,7 +54,9 @@
                     <br/>We observed that most of the customers were not interested (apart from a simple “hello”) in having a conversation. After a while, a line built up at the checkout counter since there was only one person at the register. The checkouts took a long time, depending on the amount of items a customer had. Getting rid of the hanger and security tag on each garment seemed to create a bottleneck in the purchasing process. As the crowd grew at the checkout, some customers waited in line for about 8-12 minutes. We saw at least one woman leave the line, likely because it was too long. From this exercise, we uncovered new user needs and had more insights into the shopping experience of real customers.
                 </p>
                 <br/>
-                <p class="topic">user research and insights</p>
+            </section>
+            <section>
+                <p class="topic">User research and insights</p>
                 <br/>
                 <p>To further understand customer needs, we interviewed young people about their general checkout experience in retail stores. Our goal was to <b>identify customer pain points and response toward self check-out.</b> We asked questions such as...</p>
                 <br/>
@@ -60,6 +69,8 @@
                     <li>Is there anything you would improve about self check-out?</li>
                 </ul>
                 <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/shopify/ideal.png" />
                 </div>
@@ -67,63 +78,88 @@
                 <p>Based on our exploratory interviews, people said that their ideal checkout experience was speedy, involved talking to staff as little as possible, and getting help from sales associates when needed. When rating the importance of speed in the checkout process the interviewees reported an average score of 9 (on a scale from 1-10). Overall, responses to self-checkout were positive.
                 </p>
                 <br/>
-                <p class="topic">our solution</p>
+            </section>
+            <section>
+                <p class="topic">Our solution</p>
                 <br/>
                 <p>We came up with Shopify, a mobile app that combines the traditional brick-and-mortar shopping experience with the customer behavior and independence of e-commerce. We proposed a <b>checkout app with a new system of security, where users scan QR codes of their items using their smartphone cameras and purchase items through the app.</b> This eliminates the need for cashiers and long lines, giving the consumer more independence and control over their purchase.</p>
                 <br/>
                 <p>Our target audience is young adults (especially women) that frequently shop at retail stores and use mobile apps. We cater to the individuals who don’t see personal contact in the store as a value-adding feature of the in-store experience. </p>
                 <br/>
-                <p class="topic">ideating and iterating</p>
+            </section>
+            <section>
+                <p class="topic">Ideating and iterating</p>
                 <br/>
                 <p>We came up with the following cognitive workflow diagram in order to map out the actions and thought process of a person shopping at a retail chain. This helped us identify specific areas of a consumer's shopping experience that can be confusing or inefficient, and opportunities for our app to address some of these issues.</p>
-                <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/shopify/workflow.png" />
                     <figcaption class="caption">Cognitive workflow analysis</figcaption>
+                    </br>
                 </div>
                 <br/>
+            </section>
+            <section>
                 <p>Based on our analysis and following some whiteboarding, we came up with some low-fidelity wireframes to represent the core user interactions of our app.</p>
                 <br/>
                 <div>
                     <img class="feature" data-src="../assets/shopify/wireframe.png" />
                     <figcaption class="caption">A few wireframes</figcaption>
+                    <br/>
                 </div>
                 <br/>
                 <p>During the ideation process, we realized that a potential constraint for our project is the security tag that many clothing items have. After discussing several different solutions, we prototyped a <b>magnetic security tag, which is linked to the item's QR code and its database entry</b>. Once the QR code is scanned and the purchase is fulfilled through the app, the tag will demagnetize, automatically releasing the security restriction on the clothing.</p>
                 <br/>
-                <p class="topic">field testing insights</p>
+            </section>
+            <section>
+                <p class="topic">Field testing insights</p>
                 <br/>
                 <p>We wanted to observe how real users would react to our app early in the development process, so recruited random, unbiased participants in the student union. <b>We presented them with our low-fidelity paper prototype and a simple scenario: You're in a Forever21 store and just found a nice T-shirt—purchase it with our app.</b>
                     <br/>
                     <br/> We observed how the participants interacted with the screens and which buttons they pushed, and presented the corresponding new screens. We took note of where they hesitated and asked follow-up questions about their experience—what they liked and where they saw room for improvement.</p>
                 <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/shopify/testing.png" />
                     <figcaption class="caption">Field testing with low-fidelity paper prototype</figcaption>
+                    <br/>
                 </div>
                 <br/>
                 <p>We received great feedback overall, as well as some insights on improvements for our next iteration. Our participants provided some useful criticisms for us, such as idenfiying confusing symbol representations and extra options they wanted to have, especially during account setup. Based on our testing insights, we added important screens (such as “Purchase Complete”) and tutorial frames to help guide user onboarding.</p>
                 <br/>
-                <p class="topic">design process</p>
+            </section>
+            <section>
+                <p class="topic">Design process</p>
                 <br/>
                 <p>Considering our target demographics and the nature of our app, we wanted to promote a warm and positive experience for our users. For our final design, I came up with this simple visual design guide for bright, bold colors and clean typefaces. </p>
                 <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/shopify/design.png" />
                 </div>
                 <br/>
                 <p>To clarify the steps of our app and the different user interactions, we drafted the following user flow diagram. This helped map out what actions were possible and the user's shopping experience journey, ending with a purchase.</p>
                 <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/shopify/userflow.png" />
                     <figcaption class="caption">User flow</figcaption>
+                    <br/>
                 </div>
                 <br/>
-                <p class="topic">final design</p>
+            </section>
+            <section>
+                <p class="topic">Final design</p>
                 <br/>
                 <p>Following our user testing insights, I created a high-fidelity prototype of our app, keeping our style guide in mind. The following final design includes most of the major user interactions of Shopify. Our goal was to keep it simple and straightforward, in order to encourage a seamless shopping experience.</p>
                 <br/>
                 <br/>
+            </section>
+            <section>
                 <div class="swiper-container swiper1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img data-src="../assets/shopify/sign%20up.png" /></div>
@@ -142,30 +178,37 @@
                     <div class="swiper-button-prev swiper-button-black"></div>
                 </div>
                 <br/>
-                <br/>
-                <p class="topic">reflection</p>
+            </section>
+            <section>
+                <p class="topic">Reflection</p>
                 <br/>
                 <p>My contributions to the project were primarily <b>prototyping and UI/UX design</b>. I also designed our exploratory research methods and created usability metrics for our app evaluations. While self-checkout for groceries is widely implemented, and there are new advances such as <a href="https://www.amazon.com/b?node=16008589011" target="_blank">Amazon Go</a>, we realized that designing for clothing stores presented a whole new set of considerations. This project was a fun challenge because we had to consider security (both within the app and the store) and how our app could integrate with retail chains to form successful, lasting business partnerships. For future iterations, we would add the option to save items and request help from sales associates, to further streamline the shopping experience. </p>
                 <br/>
                 <br/>
-                <div class="next"><a href=" ../content/superwoman">Up Next: <b>Superwoman</b></a>
-                </div>
+
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="next" <p style="opacity: 1;">Next Up:
+                <span><a href=" ../content/superwoman">Superwoman</a></span></br>
+                <a href="/">All projects</a></p>
             </div>
+
+        </div>
+        <div class="footer">
+            <a href="mailto:divyapolson@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
+            <br/>
+            <p class="credit"> © Divya Polson 2018</p>
         </div>
     </div>
-    <br/>
-    <br/>
-    <div class="footer ">
-        <a href="mailto:dpolson@illinois.edu " target="_blank "><i class="icon-mail "></i></a>
-        <a href="https://www.linkedin.com/in/divyapolson/ " target="_blank "><i class="icon-linkedin "></i></a>
-        <a href="https://github.com/divyapolson " target="_blank "><i class="icon-github-circled "></i></a>
-        <a href="https://www.behance.net/divyapolso99ba " target="_blank "><i class="icon-behance "></i></a>
-        <a href="https://www.instagram.com/divyadesign/ " target="_blank "><i class="icon-instagram "></i></a>
-        <br/>
-        <p class="credit "> © Divya Polson 2018</p>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/js/swiper.min.js "></script>
-    <script src="../js/scripts.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/js/swiper.min.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

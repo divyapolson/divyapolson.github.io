@@ -5,57 +5,69 @@
     <title>Divya Polson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/project.css" />
     <link rel="stylesheet" href="../css/fontello.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/css/swiper.min.css">
     <script async src="../js/ga.js"></script>
 </head>
 
 <body>
-    <div class="banner" style="background-color:#1C4CBD;">
-        <p class="banner-links"><a href="/">works</a> <a href="../about">about </a><a class="cta" href="#contact">contact</a></p>
-    </div>
-    <div id="contact" class="modaloverlay">
-        <div class="modal">
-            <a href="#close" class="close">&times;</a>
-            <div>
-                <h1>Hello!</h1>
-                <br/>
-                <p>Whether you have questions or just want to say hi, feel free to add me on <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><b>Linkedin</b></a> or shoot me an <a href="mailto:divyapolson@gmail.com" target="_blank"><b>email</b></a>. I'm always open to new opportunities and collaborations.
-                    <br/>
-                    <br/>Looking forward to connecting!</p>
+    <div class="container">
+        <div id="header">
+            <div id="nav">
+                <h1 id="name"><a href="/">Divya Polson</a></h1>
+                <div id="links">
+                    <p><a href="/">projects</a>
+                        <a href="/about">about</a></p>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="title-img">
+                <img class="feature" data-src="../assets/tradeback/big.png" />
+                <div class="heading">
+                    <h2>Tradeback</h2>
+                </div>
             </div>
         </div>
-    </div>
-
-    <img class="big" data-src="../assets/tradeback/big.png" />
-
-    <div class="container">
         <div class="content">
-            <div class="details">
-
-                <h3><span style="color:#1C4CBD;">Tradeback</span> <span class="span">November - December 2017</span></h3>
-                <h4>The Art of Web Programming, Computer Science Department, UIUC</h4>
-                <br/>
-                <p><b>tools:</b> React.js, SCSS, Node.js, Express, MongoDB, Webpack, Babel, Heroku, Sketch</p>
-                <br/>
-                <p class="topic">project overview</p>
+            <section>
+                <div class="desc">
+                    <p style="font-weight: bold; opacity: 0.8;">FALL 2017</p>
+                    <p><b>The Art of Web Programming, Computer Science Department, UIUC</b></p>
+                    <p><b>Tools:</b> React.js, SCSS, Node.js, Express, MongoDB, Webpack, Babel, Heroku, Sketch</p>
+                </div>
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <section>
+                <p class="topic">Overview</p>
                 <br/>
                 <p>Tradeback is a web-based trading platform where users can <b>exchange items and services</b>. Websites like eBay and Craiglist offer a similar consumer-driven marketplace, but they emphasize purely monetary-based transactions. With Tradeback, instead of offering money for a job, you could offer a service in return. For example, if I need calculus tutoring but don’t have money to spend, I could create a post offering chemistry tutoring in exchange for the work. Tasks and items are represented by trading “cards”, and users can see their transaction history and gain a reputation. This encourages users to <b>give back to others by sharing their skills and expertise</b>, and fosters a sense of community and cooperation between members. </p>
                 <br/>
-                <p class="topic">target audience</p>
+            </section>
+            <section>
+                <p class="topic">Target audience</p>
                 <br/>
                 <p>Our primary target audience is college students or young adults. Tradeback is a good option for those who are tight on money or have skills they’d like to offer. It can be especially beneficial to people doing freelance work as a living.</p>
                 <br/>
-                <p class="topic">prototyping</p>
+            </section>
+            <section>
+                <p class="topic">Prototyping</p>
                 <br/>
                 <p>We started out with simple wireframes for core website components such as browsing and viewing post details, trading cards, and user profiles.</p>
                 <br/>
+            </section>
+            <section>
                 <div>
                     <img class="feature" data-src="../assets/tradeback/wireframe.png" />
                     <figcaption class="caption">Homepage wireframe</figcaption>
                 </div>
                 <br/>
+            </section>
+            <section>
                 <p>Based on informal user feedback, we made some adjustments to our prototype, including adding a transaction history on user profiles and a "comment" area for users to add additional details on trade offers. The following screens are our medium-fidelity prototypes.</p>
                 <br/>
                 <div class="swiper-container swiper2">
@@ -71,6 +83,8 @@
                     <div class="swiper-button-prev swiper-button-black"></div>
                 </div>
                 <br/>
+            </section>
+            <section>
                 <p class="topic">final implementation</p>
                 <br/>
                 <p>We used React to create a responsive frontend for our platform, and Node and Express on the backend. The data for our users and posts was stored in a MongoDB database. We implemented trading functionality, user authentication, messaging, and smart searching/filtering.</p>
@@ -78,33 +92,38 @@
                 <div>
                     <img class="feature" data-src="../assets/tradeback/gif.gif" />
                     <figcaption class="caption">Homepage (demo)</figcaption>
+                    <br/>
                 </div>
                 <br/>
                 <p>See it in action on <b><a href="https://github.com/divyapolson/tradeback" target="_blank">Github</a></b>!</p>
                 <br/>
+            </section>
+            <section>
                 <p class="topic">reflection</p>
                 <br/>
                 <p>My contributions were <b>front-end development and lead UX design</b>. Aside from implementing the front-end in React, I also had the opportunity to interact with data in our MongoDB database. If we had more time, we would have developed an in-application chat so users could discuss specifics of their trade or negotiate further (instead of linking to Facebook Messenger). We also would implement a rating system so that users can review other users’ services and rate their transaction. With a few more iterations, it would be useful to do some further usability testing and identify areas of improvement. Overall, I learned a lot about web development and community markets, and I could see Tradeback being successful among college-age adults.</p>
-                <br/>
-                <br/>
-                <div class="next"><a href=" ../content/etc">Up Next: <b>Sketchbook</b></a>
-                </div>
+            </section>
+            <hr>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="next" <p style="opacity: 1;">Next Up:
+                <span><a href=" ../content/etc">Sketchbook</a></span></br>
+                <a href="/">All projects</a></p>
             </div>
+
         </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="footer">
-        <a href="mailto:dpolson@illinois.edu" target="_blank"><i class="icon-mail"></i></a>
-        <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
-        <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
-        <a href="https://www.behance.net/divyapolso99ba" target="_blank"><i class="icon-behance"></i></a>
-        <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
-        <br/>
-        <p class="credit"> © Divya Polson 2018</p>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/js/swiper.min.js"></script>
-    <script src="../js/scripts.js"></script>
+        <div class="footer">
+            <a href="mailto:divyapolson@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
+            <br/>
+            <p class="credit"> © Divya Polson 2018</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/js/swiper.min.js"></script>
+        <script src="../js/scripts.js"></script>
 </body>
 
 </html>
