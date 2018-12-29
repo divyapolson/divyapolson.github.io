@@ -66,7 +66,7 @@ box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .cursor {
-	border-left: 4px solid white;
+	border-left: 4px solid #0d9de0;
 	animation: blink 1s infinite;
 }
 
