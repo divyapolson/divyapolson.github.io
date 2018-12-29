@@ -191,14 +191,19 @@ box-shadow: 0 0.5em 1em 0 rgba(0,0,0,.3);
 }
 
 .card-container {
-text-align:center;
-width:100%;
-display:block;
-margin:auto;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .cards {
-  width: 150%;
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
 }
 
 .caption {

@@ -83,14 +83,52 @@
               <section>
                   <p class="topic">Game mechanics</p>
                   <br/>
-                  <p> blah </p>
+                  <p>At the start of the game, role cards are shuffled and <span style="color: #e02c2c; font-weight: bold;">each player is randomly assigned a role</span>—they represent either Executive, Judicial, House, or Senate roles of the government. They each have different abilities accordng to their role, as described on their card.</p>
                   <br/>
               </section>
               <section>
                   <div class="card-container">
                       <img class="cards" data-src="../assets/shutdown/roles.png" />
                   </div>
-                  <br/>
+              </section>
+              <section>
+                  <p> <span style="color: #e02c2c; font-weight: bold;">Each player is also randomly assigned a party, either Stars or Stripes. </span>Each party has a list of political platforms it supports and opposes. We purposefully randomized these platforms in order to prevent the parties from resembling real political parties and keep the game neutral, while still addressing the current major political issues of today.</p>
+              </section>
+              <section>
+                  <div class="card-container">
+                      <img class="cards" data-src="../assets/shutdown/parties.png" />
+                  </div>
+              </section>
+              <section>
+<p>Every player tracks three metrics: <span style="color: #e02c2c; font-weight: bold;">Performance, Popularity, and Wealth</span>. These points are tracked with player tokens on the scoreboard. Players gain +1 performance points by exercising their powers or voting in accordance with their party agenda during Bill and Election events. A player can also gain and lose points by playing personal cards and responding to events. </p>
+              <br/>
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" data-src="../assets/shutdown/gameboard.png" />
+                      <figcaption class="caption">Everyone starts with 0 Performance, 0 Popularity, and 2 Wealth points</figcaption>
+                  </div>
+              </section>
+              <section>
+              <br/>
+              <p>At the start of each round, an <span style="color: #e02c2c; font-weight: bold;">event card is played</span>. An event can be a <span style="color: #e02c2c; font-weight: bold;">proposed bill, an upcoming election, or a national event</span> (such as war or natural disaster). House and Senate vote on bills--if they disagree, they roll to determine their voting power. Executive can veto passed bills (at the cost of popularity points), and Judicial can review any bill. In elections, everyone votes and rolls a die to determine voting power. If the outcomes align with their party agenda, players gain +1 performance points.</p>
+              <br/>
+              </section>
+              <div class="swiper-container swiper1">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img data-src="../assets/shutdown/senator.png" /></div>
+                      <div class="swiper-slide"><img data-src="../assets/shutdown/foreign.png" /></div>
+                      <div class="swiper-slide"><img data-src="../assets/shutdown/war.png" /></div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination1"></div>
+                  <div class="swiper-button-next swiper-button-black"></div>
+                  <div class="swiper-button-prev swiper-button-black"></div>
+                  <br/><br/><br/><br/>
+              </div>
+              <section>
+              <br/>
+              <p>After an event card is played, <span style="color: #e02c2c; font-weight: bold;">each player responds to the event by playing a red personal card.</span> Personal cards allow a player to influence points for themselves or others. They are either <span style="color: #e02c2c; font-weight: bold;">Gains</span>, which benefit the player themselves, or <span style="color: #e02c2c; font-weight: bold;">Attacks</span>, which can be used to negatively impact another player’s points. A special personal card, Shutdown, allows the player to reassign the role cards of each player however they wish.</p>
+              <br/>
               </section>
               <div class="swiper-container swiper1">
                   <div class="swiper-wrapper">
@@ -101,11 +139,17 @@
                   <div class="swiper-pagination swiper-pagination1"></div>
                   <div class="swiper-button-next swiper-button-black"></div>
                   <div class="swiper-button-prev swiper-button-black"></div>
+                  <br/><br/><br/><br/>
               </div>
+              <section>
+                  <br/>
+                  <p>Players redraw personal cards and the rounds continue. The game ends once a player reaches maximum Performance (7). Then, players calculate the sum of their Performance, Popularity, and Wealth points, and <span style="color: #e02c2c; font-weight: bold;">the player with the largest sum is the winner.</span> </p>
+                  <br/>
+              </section>
               <section>
                   <p class="topic">Prototyping</p>
                   <br/>
-                  <p>We expanded on our initial ideas by drafting the sequence of game events on a whiteboard. At this point, we outlined general concepts such expected gameplay and the various elements of a round. Then, we narrowed our focus to specific game materials, by creating a shared document where we each contributed content for all the cards. Once we finished creating content, we went through a few iterations of card designs before deciding on a simple, minimalistic art concept. To bring our game to life, we visited the Fab Lab to print our cards and scoreboard on cardstock. For the purposes of our prototype, we borrowed tokens and a die from other board games. </p>
+                  <p>We started by <span style="color: #e02c2c; font-weight: bold;">drafting the sequence of game events</span> on a whiteboard, outlining general concepts such as expected gameplay and the round mechanics. </p>
                   <br/>
               </section>
               <section>
@@ -113,6 +157,16 @@
                       <img class="feature" data-src="../assets/shutdown/whiteboard.png" />
                       <figcaption class="caption">Learning that game mechanics are complicated</figcaption>
                   </div>
+                  <br/>
+              </section>
+              <section>
+                  <br/>
+                  <p>Then we <span style="color: #e02c2c; font-weight: bold;">created game materials, such as card events and content</span>.
+                  Once content was finalized, we printed our cards and scoreboard on cardstock to bring our game to life. For the purposes of the prototype, we borrowed tokens and a die from other board games. </p>
+              </section>
+              <section>
+                  <div>
+                      <img style="box-shadow: none;" class="feature" data-src="../assets/shutdown/materials.png" />                  </div>
                   <br/>
               </section>
               <section>
@@ -125,21 +179,32 @@
               <section>
                   <p class="topic">Playtesting</p>
                   <br/>
-                  <p>We recruited four college students to playtest our game. We provided them with an overview of the game concept, the rules, and setup instructions. From there, we observed them as they played through several rounds of the game and offered guidance when necessary.</p>
-                  <p>As the playtesting game progressed, we observed several successes and areas of improvement based on the players’ behavior and reactions. Some game mechanics, such as the process for voting on a bill, were somewhat confusing initially. However, after the first two rounds, the players started to play more comfortably and began strategizing with each other to bring down the opposing party. Our goal was to teach players about the different roles of government and cooperative strategies, and our players seemed to respond well to these objectives—they used their knowledge of American politics to make decisions and interact cooperatively and competitively with each other. At the end of the session, players reported that they thought the cards were similar to real world events and that the game could get kids interested in politics. Overall, we received generally positive responses from our playtesters. </p>
+                  <p>We observed 4 college students as they played through several rounds of the game. Based on player behavior and input, we came up with the following insights:</p>
                   <br/>
+                  <p><ul>
+                    <li><span style="color: #e02c2c; font-weight: bold;">Realistic event cards.</span> Players commented that the cards mirrored real-world events and could get kids interested in politics. </li>
+                    <li><span style="color: #e02c2c; font-weight: bold;">Some confusing game mechanics.</span> The process for voting on a bill was somewhat confusing in the initial rounds, so the rules could be made clearer here.</li>
+                    <li><span style="color: #e02c2c; font-weight: bold;">Plenty of strategy and conflict.</span> Players discovered that things get chaotic when parties are constantly attacking one another, blocking bills, and shutting down the government.</li>
+                    <li><span style="color: #e02c2c; font-weight: bold;">Long game.</span> The game ended up taking about an hour, which is longer than we anticipated. Point mechanics and amount of cards needs to be adjusted accordingly.</li>
+                  </ul></p>
               </section>
               <section>
                   <div>
                       <img class="feature" data-src="../assets/shutdown/playtesting.png" />
-                      <figcaption class="caption">Hour-long playtesting session/figcaption>
+                      <figcaption class="caption">Hour-long playtesting session</figcaption>
                   </div>
+                  <br/>
+              </section>
+              <section>
+                  <p>Overall, we received generally positive responses from our playtesters. Our playtesters responded well to the learning objectives of the game—they used their knowledge of American politics to make decisions and cooperate or attack (depending on the situation). Although this game is meant for a younger audience, it seems that the complexity scales well and it can be <span style="color: #e02c2c; font-weight: bold;">engaging even for those well-versed in American politics.</span></p>
                   <br/>
               </section>
               <section>
                   <p class="topic">Reflection</p>
                   <br/>
-                  <p>During the playtest, our volunteers seemed to really enjoy the game, and they were able to recognize the many similarities between the game and the U.S. government. The two parties conflicted with each other and strategized amongst themselves just as they do in the real world. They recognized that they were reacting to in-game events that paralleled actual events. They also discovered that things get chaotic when players are constantly attacking one another and shutting down the government. The meaning that comes from this game is all in the experience, which differs between each game. Players will also learn different things based on their own past experiences. Somebody who is just starting to learn about the government will get a deeper understanding of how the different roles interact with each other and the amount of power in each. Somebody who is well-versed in American politics can learn something by exploring what it would be like if, for example, the Judicial branch were to attempt to reject every bill that passes. They would see the importance in having a judiciary that is fair, since a biased judge could easily take advantage of the system. There is something to be gained for everyone.</p>
+                  <p>As a game designer on this project, there were some interesting challenges to overcome. For example, <span style="color: #e02c2c; font-weight: bold;">how could we eliminate political bias in our game design?</span> It was tricky navigating that careful balance between crafting realistic game events and being too politically divisive. We also struggled with <span style="color: #e02c2c; font-weight: bold;">ensuring fairness in the game mechanics.</span> Are there ways to make the game less frustrating for low-powered players?</p>
+                  <br/>
+                  <p>With a few tweaks, I could see this game being successful in classroom settings. Overall, this was a really fun project and I enjoyed the opportunity work hands-on with print design and game elements.</p>
                   <br/>
               </section>
               <hr>
