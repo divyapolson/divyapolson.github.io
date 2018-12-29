@@ -31,8 +31,7 @@ function theDomHasLoaded(e) {
   document.addEventListener('readystatechange', function () {
 
     if ( document.readyState === 'complete' ) {
-  	  // The Typewriter
-      var textArray = ["storytelling with data.","visual communication.","products for good.", "emerging technologies."];
+      var textArray = ["visual communication.","products for good.", "emerging technologies.", "storytelling with data."];
       var typeWriterElement = document.getElementById('typewriter');
 
       function delWriter(text, i, cb) {
@@ -78,7 +77,7 @@ function theDomHasLoaded(e) {
 
       setTimeout( function () {
           StartWriter(0);
-      },500);
+      },1000);
 
     }
   });

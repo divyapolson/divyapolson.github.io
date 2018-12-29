@@ -5,71 +5,116 @@
     <title>Divya Polson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/project.min.css" />
     <link rel="stylesheet" href="../css/fontello.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/css/swiper.min.css">
     <script async src="../js/ga.js"></script>
 </head>
 
 <body>
-    <div class="banner" style="background-color:#000;">
-        <p class="banner-links"><a href="/">works</a> <a href="../content/about">about </a><a class="cta" href="#contact">contact</a></p>
-    </div>
-    <div id="contact" class="modaloverlay">
-        <div class="modal">
-            <a href="#close" class="close">&times;</a>
-            <div>
-                <h1>Hello!</h1>
-                <br/>
-                <p>Whether you have questions or just want to say hi, feel free to add me on
-                    <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><b>Linkedin</b></a> or shoot me an <a href="mailto:divyapolson@gmail.com" target="_blank"><b>email</b></a>. I'm always open to new opportunities and collaborations.
-                    <br/>
-                    <br/>Looking forward to connecting!</p>
-            </div>
-        </div>
-    </div>
 
-    <img class="big" data-src="../assets/imdb/big.png" />
+  <div  id="myHeader">
+    <div id="links">
+        <p><a href="/">works</a>
+            <a href="/about">about</a></p>
+    </div>
+  </div>
+
+  <div class="top">
+    <div class="progress-container">
+      <div style="background: #F34C4C;" class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
 
     <div class="container">
-        <div class="content">
-            <div class="details">
-                <h3><span style="color:#FF5454;">Res Novae</span> <span class="span">May 2018</span></h3>
-                <h4>Educational Game Design, Curriculum Instruction, UIUC</h4>
-                <br/>
-                <br/>
-                <p><b>tools:</b> Python, Ren'Py, Sketch</p>
-                <br/>
-                <p>My first project using React.js! This is a single-page React app that uses movie data from <a href="https://www.themoviedb.org/?language=en" target="_blank"><i>The Movie Database</i></a> API. I implemented the following user interactions: </p>
-                <br/>
-
-                <ul>
-                    <li>Search for movies with live-filtered results</li>
-                    <li>Sort query results by popularity and vote count</li>
-                    <li>Sort query results in ascending or descending order</li>
-                    <li>View films in gallery view and filter by film genre</li>
-                    <li>Select a movie to reveal additional details, such as synopsis and average rating</li>
-                </ul>
-                <br/>
-                <p>Check it out on <a href="https://github.com/divyapolson/react-imdb-gallery" target="_blank"><b>Github</b></a>!</p>
-                <br/>
-                <br/>
-                <div class="next"><a href=" ../content/etc">Up Next: <b>Creative</b></a>
-                </div>
+        <div>
+            <br/>
+            <div class="heading">
+                <h2>Res Novae</h2>
             </div>
+            <div class="subheading">
+              <h2>Educational Python game teaching concepts in biology and ecology</h2>
+            </div>
+            <br/>
+            <div class="title-img">
+                <img class="feature" data-src="../assets/shutdown/big.png" />
+            </div>
+            <br/><br/><br/>
         </div>
-    </div>
-    <br/>
-    <br/>
-    <div class="footer">
-        <a href="mailto:dpolson@illinois.edu" target="_blank"><i class="icon-mail"></i></a>
-        <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
-        <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
-        <a href="https://www.behance.net/divyapolso99ba" target="_blank"><i class="icon-behance"></i></a>
-        <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
-        <br/>
-        <p class="credit"> © Divya Polson 2018</p>
-    </div>
-    <script src="../js/scripts.js"></script>
+        <div class="content">
+              <section>
+                  <div class="desc">
+                      <p style="font-weight: bold; opacity: 0.8;">SPRING 2018</p>
+                      <br/>
+                      <p><b>Educational Game Design, Curriculum and Instruction Department, UIUC</b></p>
+                      <br/>
+                      <p><b>Tools:</b> Python, Ren'Py, Sketch</p>
+                  </div>
+              </section>
+              <hr>
+              <br/>
+              <br/>
+              <br/>
+              <section>
+                  <p class="topic">Game concept</p>
+                  <br/>
+                  <p>Our game concept for our digital game was an introduction to environmental concepts like evolution and ecosystems. The player takes on the role of a scientist populating and observing a new planet. In this game, the goal for the player is to keep their species alive. The player will have the responsibility of choosing what evolutionary direction to take the species in and have important choices to make for them. These choices will appear through various means, such as environmental events, breeding patterns, and more. The title, Res Novae, means “new things” in Latin, which aims to conjure interest in the new directions a species can take during gameplay. </p>
+                  <br/>
+              </section>
+              <section>
+                  <p class="topic">Learning opportunities</p>
+                  <br/>
+                  <p>The primary target learning objective for Res Novae is to teach biological/genetic and ecological concepts. While the game does not fully delve into specific details or supercomputer level simulations of a living species, it does simulate the general concepts. These concepts that we aimed to achieve are a basic ecosystem, breeding, genetic drift, the food chain, and more. They do not require overly complicated or time-consuming inputs and outputs, but are instead guided by the gameplay’s events and decisions about the species made by the player’s scientists.
+	Another target learning objective is resource management. The game gives the player, similar to the board game Evolution, a finite amount of resources that can be utilized. The placement of a species in different environments will affect how that species will survive and adapt. In a sense, your species is a resource that you are constantly managing. In addition to managing these species, you take on the role of a scientist that has a fixed budget. The research center’s money can be spent in various ways in order to develop cures to viruses, research organisms, and aid in the survival of the species. </p>
+                  <br/>
+              </section>
+              <section>
+                  <p class="topic">Game mechanics</p>
+                  <br/>
+                  <p> blah </p>
+                  <br/>
+              </section>
+              <section>
+                  <p class="topic">Prototyping</p>
+                  <br/>
+                  <p>We prototyped Res Novae in RenPy, a python based platform. We initially planned to use Unity for the game with a random map generator, but after group meetings we decided it would be more fitting and more accessible for each member to use RenPy, especially given the nature of the game. This decision was based on a game brainstorming session where we decided initial traits and environment types for the game’s first level to use. Once we were finished creating content for the first level, we designed assets and started coding to complete it. We also added music to evoke the mood of each scene and add an extra dimension of interaction for the user. We collaborated on coding the game by sharing code on GitHub and Google Drive in order to make alterations. </p>
+                  <br/>
+              </section>
+              <section>
+                  <p class="topic">Playtesting</p>
+                  <br/>
+                  <p>Our playtesting consisted of four different friends who each played the game independently. Throughout the session, we looked for engagement and understanding of the material. We wanted to make sure that players were putting thought into their choices, rather than clicking through the game blindly. Therefore, we asked that they relay their thought process out loud while playing the game, so we could understand their reasoning behind their decisions. Our game is also text heavy, so it is important to see whether or not certain segments are too wordy. Our playtesting sessions helped us pinpoint areas of the game that felt long or tedious to read, so that we could adjust our script accordingly. Since our game uses specific biological terms such as “apex predator”, some playtesters were confused about what decision to make due to lack of understanding of the term. From this insight, we added links to allow players to click on certain terms to read their definitions and learn more about them. In general, our game received positive responses from our playtesters.
+</p>
+                  <br/>
+              </section>
+              <section>
+                  <p class="topic">Reflection</p>
+                  <br/>
+                  <p>In conclusion, Res Novae is a game that we believe will be a fun experience first and an educational simulation second. While the game is designed to teach certain aspects of biology and ecology, the gameplay should give the players within our target age range of 10+ a fun experience. Tycoon games are super popular among that age range and our game, while different, contains aspects of the genre regarding a population/species that you control. In regards to meaningful play, we believe the game contains elements of immersion and flow that allow it to emerge. Being able to receive feedback on your actions and see stats change with the decisions you make can elicit feelings of happiness or urgency, which keeps the players in a state of wanting more in pursuit of their goals. In future iterations, we plan to introduce more complex variables in order to create a more realistic experience and more accurately depict the timeline of evolution and genetic drift. In doing so, our game could appeal to an older audience. Overall, Res Novae has implied educational value under a layer of simple gameplay. Guided with a lesson plan or keeping specific things in mind, the game takes on new forms, which shows how versatile the game could be. </p>
+                  <br/>
+              </section>
+              <hr>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <div class="next" <p style="opacity: 1;">Next Up:
+                  <span><a href=" ../content/shopify">Shopify</a></span></br>
+                  <a href="/">All projects</a></p>
+              </div>
+
+          </div>
+        </div>
+        <div class="footer">
+            <a href="mailto:divyapolson@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+            <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://github.com/divyapolson" target="_blank"><i class="icon-github-circled"></i></a>
+            <a href="https://www.instagram.com/divyadesign/" target="_blank"><i class="icon-instagram"></i></a>
+            <br/>
+            <p class="credit"> © Divya Polson 2018</p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.5/js/swiper.min.js"></script>
+        <script src="../js/scripts.js"></script>
 </body>
 
 </html>
