@@ -7,8 +7,6 @@
 });
 
 
-
-
 window.onscroll = function() {myFunction()};
 
 var heading = document.getElementById("myHeader");
@@ -25,9 +23,6 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
-
-
 
 document.addEventListener('readystatechange', function () {
 
@@ -83,7 +78,6 @@ document.addEventListener('readystatechange', function () {
 
   }
 });
-
 
 //carousel sliders
 var swiper1 = new Swiper('.swiper1', {
