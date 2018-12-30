@@ -22,7 +22,7 @@
 
   <div class="top">
     <div class="progress-container">
-      <div style="background: #F34C4C;" class="progress-bar" id="myBar"></div>
+      <div style="background: #F95D34;" class="progress-bar" id="myBar"></div>
     </div>
   </div>
 
@@ -37,7 +37,7 @@
             </div>
             <br/>
             <div class="title-img">
-                <img class="feature" data-src="../assets/shutdown/big.png" />
+                <img class="feature" data-src="../assets/resnovae/resnovae1.png" />
             </div>
             <br/><br/><br/>
         </div>
@@ -58,39 +58,117 @@
               <section>
                   <p class="topic">Game concept</p>
                   <br/>
-                  <p>Our game concept for our digital game was an introduction to environmental concepts like evolution and ecosystems. The player takes on the role of a scientist populating and observing a new planet. In this game, the goal for the player is to keep their species alive. The player will have the responsibility of choosing what evolutionary direction to take the species in and have important choices to make for them. These choices will appear through various means, such as environmental events, breeding patterns, and more. The title, Res Novae, means “new things” in Latin, which aims to conjure interest in the new directions a species can take during gameplay. </p>
+                  <p>Res Novae is a Python game introducing middle schoolers to environmental concepts like evolution and ecosystems. The <span style="color: #FA5631; font-weight: bold;">player takes on the role of a scientist populating and studying a new planet, with the goal of keeping their species alive</span>. Players choose what evolutionary direction to take the species in, by making choices based on natural events, breeding patterns, and environmental factors. The title, Res Novae, meaning “new things” in Latin, aims to conjure interest in the new directions a species can take during gameplay. </p>
                   <br/>
               </section>
               <section>
                   <p class="topic">Learning opportunities</p>
                   <br/>
-                  <p>The primary target learning objective for Res Novae is to teach biological/genetic and ecological concepts. While the game does not fully delve into specific details or supercomputer level simulations of a living species, it does simulate the general concepts. These concepts that we aimed to achieve are a basic ecosystem, breeding, genetic drift, the food chain, and more. They do not require overly complicated or time-consuming inputs and outputs, but are instead guided by the gameplay’s events and decisions about the species made by the player’s scientists.
-	Another target learning objective is resource management. The game gives the player, similar to the board game Evolution, a finite amount of resources that can be utilized. The placement of a species in different environments will affect how that species will survive and adapt. In a sense, your species is a resource that you are constantly managing. In addition to managing these species, you take on the role of a scientist that has a fixed budget. The research center’s money can be spent in various ways in order to develop cures to viruses, research organisms, and aid in the survival of the species. </p>
+                  <p>The primary target learning goal is to <span style="color: #FA5631; font-weight: bold;">simulate and teach biological/genetic and ecological concepts</span>, such as:</p>
+                  <p><ul>
+                    <li>ecosystem building</li>
+                    <li>genetic drift</li>
+                    <li>mutations and evolution</li>
+                    <li>food chain</li>
+                  </ul></p>
+                  <p>Along with this, players will learn resource management and budgeting as they are limited by the research center's funds to help develop cures to viruses, research organisms, and aid in the survival of the species.</p>
                   <br/>
               </section>
               <section>
                   <p class="topic">Game mechanics</p>
                   <br/>
-                  <p> blah </p>
+                  <p>First, players are <span style="color: #FA5631; font-weight: bold;">given a species with randomly assigned traits</span>, such as internal temperature (warm or cold-blooded), diet (herbivore, omnivore, or carnivore), and rank in the food chain (on a scale of 1-10). Along with this, they are given a budget of 4500 coins that must last them throughout the level. </p>                  <br/>
+                  <br/>
+
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/species-intro.png" />
+                      <figcaption class="caption">Game intro</figcaption>
+                  </div>
                   <br/>
               </section>
               <section>
-                  <p class="topic">Prototyping</p>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/environments.png" />
+                      <figcaption class="caption">4 environment selections: Coastal desert, temperate forest, tropical rainforest, tundra</figcaption>
+                  </div>
                   <br/>
-                  <p>We prototyped Res Novae in RenPy, a python based platform. We initially planned to use Unity for the game with a random map generator, but after group meetings we decided it would be more fitting and more accessible for each member to use RenPy, especially given the nature of the game. This decision was based on a game brainstorming session where we decided initial traits and environment types for the game’s first level to use. Once we were finished creating content for the first level, we designed assets and started coding to complete it. We also added music to evoke the mood of each scene and add an extra dimension of interaction for the user. We collaborated on coding the game by sharing code on GitHub and Google Drive in order to make alterations. </p>
+              </section>
+              <section>
+                <p>Gameplay involves playing God (so to speak): <span style="color: #FA5631; font-weight: bold;">making decisions for your species and responding to events that play out in the environment</span>. Events tie into science concepts such as genetic drift, food ecosystems, and environmental stressors. For each event, the player is given a set of choices. Some solutions cost money and are deducted from the budget. Players can also elect to do nothing and let the event play out naturally. </p>
+                <br/>
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/choices.png" />
+                      <figcaption class="caption">Player reacting to a natural disaster</figcaption>
+                  </div>
+                  <br/>
+              </section>
+              <section>
+                <p>After each selection, the species’ growth rate is manipulated behind the scenes, and the player can directly see how their choice affected their species count. Many outcomes are weighted or assigned certain probabilities, meaning the player may not achieve the same outcome every time as expected. At the end, players are given an overview of how they performed—<span style="color: #FA5631; font-weight: bold;">how well their species survived and if they stayed within their budget.</span> </p>
+                <br/>
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/end.png" />
+                      <figcaption class="caption">End of game</figcaption>
+                  </div>
+                  <br/>
+              </section>
+              <section>
+                <p>The gameplay in Res Novae is explicitly designed to provide the player of the game feedback on their actions and decisions. <span style="color: #FA5631; font-weight: bold;">Receiving feedback on actions and seeing stats change as a result of decisions</span> can elicit feelings of happiness or urgency, which keeps players engaged in gameplay. Based on past consequences, players can make guided decisions on their next move.</p>
+                <br/>
+                <p>With each level, the <span style="color: #FA5631; font-weight: bold;">events get progressively more challenging and put more strain on your species</span>. The species will also grow and mutate along the way, which influences its growth rate and energy levels. Over time, players will learn how to balance their decisions to grow their species in a healthy and manageable way. </p>
+                <br/>
+              </section>
+              <section>
+                  <p class="topic">Prototype</p>
+                  <br/>
+                  <p>We prototyped Res Novae in <span style="color: #FA5631; font-weight: bold;">RenPy, a visual engine platform for Python development.</span> For the purposes of our prototype, we decided to build out a demo of the first level. We designed assets in Sketch, created events, and calculated probabilities for different outcomes using random number generator functions. We also added music to evoke the mood of each scene and add an extra dimension of interaction for the user.</p>
+                  <br/>
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/variations.png" />
+                      <figcaption class="caption">Simple species design variations</figcaption>
+                  </div>
+                  <br/>
+              </section>
+              <section>
+                  <div>
+                      <img class="feature" style="box-shadow: none;" data-src="../assets/resnovae/events.png" />
+                      <figcaption class="caption">Event examples</figcaption>
+                  </div>
                   <br/>
               </section>
               <section>
                   <p class="topic">Playtesting</p>
                   <br/>
-                  <p>Our playtesting consisted of four different friends who each played the game independently. Throughout the session, we looked for engagement and understanding of the material. We wanted to make sure that players were putting thought into their choices, rather than clicking through the game blindly. Therefore, we asked that they relay their thought process out loud while playing the game, so we could understand their reasoning behind their decisions. Our game is also text heavy, so it is important to see whether or not certain segments are too wordy. Our playtesting sessions helped us pinpoint areas of the game that felt long or tedious to read, so that we could adjust our script accordingly. Since our game uses specific biological terms such as “apex predator”, some playtesters were confused about what decision to make due to lack of understanding of the term. From this insight, we added links to allow players to click on certain terms to read their definitions and learn more about them. In general, our game received positive responses from our playtesters.
-</p>
+                  <p>Four friends each playtested the game independently. Throughout the sessions, we looked for engagement and understanding of the material. We asked testers to relay their thought process aloud, so we could understand their reasoning and ensure they weren't clicking through the game blindly. The playtesting sessions helped provide the following insights:</p>
                   <br/>
+                  <p><ul>
+                    <li><span style="color: #FA5631; font-weight: bold;">Text-heavy segments.</span> Playtesters helped us pinpoint areas of the game that felt long or tedious to read, so that we could adjust our script accordingly.</li>
+                    <li><span style="color: #FA5631; font-weight: bold;">Good level of engagement.</span> Players seem intrigued by outcomes of their decisions and tried their best to grow their species.</li>
+                    <li><span style="color: #FA5631; font-weight: bold;">Biological jargon.</span> Our game uses specific biological terms such as “apex predator”, which some playtesters were unfamiliar with. Based on this, we added links so players could click on certain terms and read their definitions. </li>
+                  </ul></p>
               </section>
+              <!-- <section>
+                  <div>
+                      <img class="feature" data-src="../assets/resnovae/playtesting.png" />
+                      <figcaption class="caption">Playtesting session</figcaption>
+                  </div>
+                  <br/>
+              </section> -->
               <section>
                   <p class="topic">Reflection</p>
                   <br/>
-                  <p>In conclusion, Res Novae is a game that we believe will be a fun experience first and an educational simulation second. While the game is designed to teach certain aspects of biology and ecology, the gameplay should give the players within our target age range of 10+ a fun experience. Tycoon games are super popular among that age range and our game, while different, contains aspects of the genre regarding a population/species that you control. In regards to meaningful play, we believe the game contains elements of immersion and flow that allow it to emerge. Being able to receive feedback on your actions and see stats change with the decisions you make can elicit feelings of happiness or urgency, which keeps the players in a state of wanting more in pursuit of their goals. In future iterations, we plan to introduce more complex variables in order to create a more realistic experience and more accurately depict the timeline of evolution and genetic drift. In doing so, our game could appeal to an older audience. Overall, Res Novae has implied educational value under a layer of simple gameplay. Guided with a lesson plan or keeping specific things in mind, the game takes on new forms, which shows how versatile the game could be. </p>
+                  <p>Guided with a lesson plan, we envision Res Novae being an enjoyable educational activity for middle school classrooms. In future iterations, we plan to <span style="color: #FA5631; font-weight: bold;">add levels, introducing more complex variables to create a more realistic simulation and more accurately depict the timeline of evolution and genetic drift.</span> In doing so, our game could appeal to an older audience. </p>
+                  <br/>
+                  <p>I particularly enjoyed playtesting sessions and watching people's reactions to the game as they failed and succeeded through milestones. In development, Ren'Py turned out to be a surprisingly powerful engine with a lot of customizability, ultimately helping us create a pretty polished demo. I also had fun taking a trip down memory lane and thinking critically about biological and ecological concepts. </p>
+                  <br/><br/><br/>
+                  <p style="font-size:1.7em;"><span style="color: #FA5631; font-weight: bold;">Want to try the demo?</span> <a href="mailto:divyapolson@gmail.com" target="_blank"><b>Email me</b></a> to request a download link!</p>
                   <br/>
               </section>
               <hr>
@@ -99,7 +177,7 @@
               <br/>
               <br/>
               <div class="next" <p style="opacity: 1;">Next Up:
-                  <span><a href=" ../content/shopify">Shopify</a></span></br>
+                  <span><a href=" ../content/saferoute">SafeRoute</a></span></br>
                   <a href="/">All projects</a></p>
               </div>
 
