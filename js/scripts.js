@@ -119,5 +119,7 @@ function theDomHasLoaded(e) {
       },
   });
 
-
 }
+
+ScrollReveal().reveal('.text');
+ScrollReveal().reveal('.feature');
