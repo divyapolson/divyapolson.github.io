@@ -122,4 +122,5 @@ function theDomHasLoaded(e) {
 }
 
 ScrollReveal().reveal('.text');
+ScrollReveal().reveal('.project');
 ScrollReveal().reveal('.feature');

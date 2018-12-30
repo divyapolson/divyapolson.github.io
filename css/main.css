@@ -210,6 +210,10 @@ margin: 10% auto;
   margin-top: -15px;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /*
 browser supports css grid
 */
