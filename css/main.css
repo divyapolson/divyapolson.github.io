@@ -78,6 +78,9 @@ box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 .downArrow{
   text-align: center;
   width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding: 5em;
 }
 .bounce {
 	-moz-animation: bounce 3s infinite;
@@ -156,7 +159,7 @@ box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
+    flex-row: wrap;
     margin: -1rem -1rem;
     align-items: center;
     justify-content: center;
@@ -164,6 +167,7 @@ box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 
 .project {
     flex: 1 0 24rem;
+    flex-basis: 30%;
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -251,6 +255,14 @@ browser supports css grid
     color: black;
     font-size: 16px;
 }
+@media only screen and (min-width: 1523px) {
+  @supports (display: grid) {
+      .projects {
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
+}
+
 @media only screen and (max-width: 600px) {
     .hi {
         font-size: 3.5em;
