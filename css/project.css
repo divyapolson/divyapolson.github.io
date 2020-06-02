@@ -267,6 +267,11 @@ hr {
   font-size: 18px;
 }
 
+.footer-header {
+  font-size: 32px;
+  font-weight: 800;
+}
+
 .footer a:link,
 .footer a:visited,
 .footer a:active {
