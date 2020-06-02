@@ -41,9 +41,15 @@ h1 {
   line-height: 55px;
 }
 
+<<<<<<< HEAD
 li {
   font-size: 16px;
   line-height: 26px;
+=======
+.intro {
+  height: 90vh;
+  width: 100vw;
+>>>>>>> e42279dcc30ff8c47a1677724c6517ecfd8ec537
 }
 
 @keyframes animateSquiggles {
