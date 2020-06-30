@@ -351,9 +351,10 @@ img {
 
 .box1 {
     height: 60em;
-    background-image: url(../assets/target/target.png);
+    background: #c21a19;
+    background-image: url(../assets/target/newtarget.png);
     background-size: cover;
-    background-position: center 8em;
+    background-position: center;
 }
 .box2 {
     height: 70em;
@@ -367,11 +368,11 @@ img {
     height: 70em;
     margin-top: -5em;
     background-image: linear-gradient(rgba(255,255,255,.15), rgba(255,255,255,.15)), url(../assets/homio/preview.png);
-    background-size: 120%;
+    background-size: 125%;
 }
 .box4 {
     height: 60em;
-    background: #f0f7c8;
+    background: #8dc2a2;
     margin-top: 5em;
     background-image: url(../assets/capstone/illo3.png);
     background-size: 60%;
@@ -386,6 +387,7 @@ img {
 }
 .project-info {
     position: absolute;
+    color:#f2f2f2;
 }
 .metadata {
     font-size: 14px;
@@ -394,10 +396,10 @@ img {
 .description,
 .done-description {
     position: relative;
-    color: #292929;
-    font-size: 34px;
+    color:#f2f2f2;
+    font-size: 32px;
     font-weight: 800;
-    text-align: center;
+    text-align: left;
     width: 13em;
     top: 0.5em;
 }
@@ -424,14 +426,14 @@ img {
     opacity: 0.7;
     transition: all ease 0.5s;
 }
-.homio,
+/* .homio,
 .target {
     left: -3em;
 }
 .capstone,
 .prototyping {
     right: -3em;
-}
+} */
 @media screen and (max-width: 568px) {
     .description,
     .done-description {
@@ -455,7 +457,7 @@ img {
     right: -5em;
     position: absolute;
     top: -4em;
-    width: 37%;
+    width: 33%;
 }
 #links {
     display: inline-block;
