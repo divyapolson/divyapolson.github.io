@@ -338,12 +338,12 @@ img {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     top: 0;
-    transition: top ease 0.5s;
     background-color: #fff;
     background-repeat: no-repeat;
+    transition: all ease 0.5s;
 }
 .box:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
     position: relative;
     top: -10px;
     transition: all ease 0.5s;
@@ -352,14 +352,15 @@ img {
 .box1 {
     height: 60em;
     background: #c21a19;
-    background-image: url(../assets/target/newtarget.png);
+    background-image: linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url(../assets/target/newtarget.png);
     background-size: cover;
     background-position: center;
 }
+
 .box2 {
     height: 70em;
     background: #4e65a7;
-    background-image: url(../assets/explorecurrent/gif.gif);
+    background-image: linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url(../assets/explorecurrent/gif.gif);
     background-repeat: no-repeat;
     background-size: 160%;
     background-position: center bottom;
@@ -426,14 +427,7 @@ img {
     opacity: 0.7;
     transition: all ease 0.5s;
 }
-/* .homio,
-.target {
-    left: -3em;
-}
-.capstone,
-.prototyping {
-    right: -3em;
-} */
+
 @media screen and (max-width: 568px) {
     .description,
     .done-description {
@@ -453,12 +447,7 @@ img {
         top: 1.5em;
     }
 }
-.target-png {
-    right: -5em;
-    position: absolute;
-    top: -4em;
-    width: 33%;
-}
+
 #links {
     display: inline-block;
     height: 3.5em;
