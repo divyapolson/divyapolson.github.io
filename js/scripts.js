@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 
+// HIDDEN CONTENT
+
+function verify() {
+  // I created the function, which is called onclick on the button
+  if (document.getElementById("password").value === "Target2018") {
+    document.getElementById("HIDDENDIV").classList.remove("hidden"); // Using class instead of inline CSS
+    document.getElementById("credentials").classList.add("hidden"); // Hide the div containing the credentials
+  } else {
+    alert("Password is invalid");
+    password.setSelectionRange(0, password.value.length);
+  }
+  return false;
+}
+
 function theDomHasLoaded(e) {
   //lazy load
   [].forEach.call(document.querySelectorAll("img[data-src]"), function(img) {

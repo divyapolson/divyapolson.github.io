@@ -49,22 +49,10 @@ li {
 h2 {
   font-size: 36px;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 1em;
   position: relative;
   font-weight: 800;
-  padding: 1em;
-}
-
-h2:after {
-  content: "";
-  position: absolute;
-  background: #000;
-  width: 30px;
-  height: 4px;
-  bottom: 0;
-  left: 50%;
-  margin: 0px 0px 0px -15px;
+  padding: 0.5em 0;
 }
 
 h3 {
@@ -157,13 +145,23 @@ hr {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  padding: 2em 5em;
+  padding: 5em 8em;
   margin: 0 auto;
   font-size: 18px;
-  /* background-color: #f5f9fb; */
-  /* background-color: #272c34;
-  color: white; */
+  margin-top: -4px;
+  background-color: #171717;
+  color: white;
 }
+
+.case-study {
+  padding-top: 144px;
+}
+
+.case-study p {
+  color: #272c34;
+  line-height: 28px;
+}
+
 .col {
   padding: 20px;
   width: 24%;
@@ -236,6 +234,26 @@ hr {
   margin: 0 auto;
   padding: 3em 6em;
   line-height: 30px;
+}
+
+#credentials {
+  text-align: center;
+}
+
+input {
+  padding: 1em;
+  width: 250px;
+  font-size: 16px;
+  border: 2px solid #f1f1f1;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline-color: #2d2c2d;
+}
+
+.hidden {
+  display: none;
 }
 
 .images {

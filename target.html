@@ -1,134 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Divya Polson</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="css/project.css" />
-    <link rel="stylesheet" href="css/fontello.min.css" />
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script async src="js/ga.js"></script>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
+  <style>
+    body {
+      background-attachment: fixed;
+    }
+
+    .box {
+      border-radius: 3px;
+      margin: auto;
+      padding: 12px;
+    }
+
+    .lightbox {
+      zoom: 1.5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: auto;
+    }
+
+    div.horizontal {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+    }
+
+    div.vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+
+    input {
+      padding: 1em;
+      width: 250px;
+      font-size: 14px;
+      border: 2px solid #f1f1f1;
+      border-radius: 6px;
+    }
+
+    input:focus {
+      outline-color: #2d2c2d;
+    }
+  </style>
+
   <body>
-    <div id="header" class="header">
-      <div id="links">
-        <a href="/">Divya Polson</a>
-        <span id="nav-links">
-          <a href="#work">Work</a>
-          <a href="/about">About</a>
-          <!-- <a href="/etc">Etc.</a> -->
-        </span>
+    <div id="loginbox" class="lightbox">
+      <div class="horizontal">
+        <div class="vertical">
+          <div class="box">
+            <input
+              style="margin: 16px;"
+              id="password"
+              type="password"
+              placeholder="Enter password"
+            />
+            <br />
+            <!-- <button id="loginbutton" type="button">Enter</button> -->
+            <p id="wrongPassword" style="display: none">Incorrect password</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="top">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
 
-    <img
-      style=" max-width: 100%;
-    height: auto;"
-      src="assets/homio/header.png"
-    />
-    <div class="metadata-grid">
-      <div class="col">
-        <b>TIMELINE</b>
-        <p class="metadata-desc">August 2018 - January 2019</p>
-      </div>
-      <div class="col">
-        <b>TEAM</b>
-        <p class="metadata-desc">iOS Core Team</p>
-        <p class="metadata-desc">6 engineers, 2 designers, 1 product owner</p>
-      </div>
-      <div class="col">
-        <b>MY ROLE</b>
-        <p class="metadata-desc">Product design</p>
-        <p class="metadata-desc">Prototyping</p>
-        <p class="metadata-desc">UX Research support</p>
-      </div>
-      <div class="col">
-        <b>TOOLS</b>
-        <p class="metadata-desc">Sketch</p>
-        <p class="metadata-desc">InVision</p>
-        <p class="metadata-desc">Abstract</p>
-        <p class="metadata-desc">Zeplin</p>
-      </div>
-    </div>
+    <script
+      type="text/javascript"
+      src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"
+    ></script>
 
-    <hr />
+    <script type="text/javascript">
+      "use strict";
 
-    <div class="case-study">
-      <div class="section">
-        <h2>Overview</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="section">
-        <h2>The problem</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="section">
-        <h2>User testing</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="section">
-        <h2>Results</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
+      function loadPage(pwd) {
+        var hash = pwd;
+        hash = Sha1.hash(pwd);
+        var url = hash + "/target.html";
 
-    <div class="footer">
-      <p class="footer-header">Let's connect</p>
-      <a href="mailto:divyapolson@gmail.com" target="_blank"
-        ><i class="icon icon-mail-alt"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/divyapolson/" target="_blank"
-        ><i class="icon icon-linkedin-squared"></i
-      ></a>
-      <a href="https://github.com/divyapolson" target="_blank"
-        ><i class="icon icon-github-circled"></i
-      ></a>
-      <a href="https://dribbble.com/divyapolson" target="_blank"
-        ><i class="icon icon-dribbble"></i
-      ></a>
-      <br />
-      <p class="credit">© Divya Polson 2020</p>
-    </div>
+        $.ajax({
+          url: url,
+          dataType: "html",
+          success: function(data) {
+            window.location = url;
+          },
+          error: function(xhr, ajaxOptions, thrownError) {
+            parent.location.hash = hash;
 
-    <script src="js/scripts.js"></script>
+            //$("#wrongPassword").show();
+            $("#password").attr("placeholder", "Incorrect password");
+            $("#password").val("");
+          }
+        });
+      }
+
+      $("#loginbutton").on("click", function() {
+        loadPage($("#password").val());
+      });
+      $("#password").keypress(function(e) {
+        if (e.which == 13) {
+          loadPage($("#password").val());
+        }
+      });
+      $("#password").focus();
+    </script>
   </body>
 </html>
