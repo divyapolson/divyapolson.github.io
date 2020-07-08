@@ -6,51 +6,63 @@
   </head>
 
   <style>
-    body {
-      background-attachment: fixed;
+
+    @import url(https://rsms.me/inter/inter.css);
+    html {
+      font-family: Inter, sans-serif;
+    }
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: "Inter var", sans-serif;
+      }
     }
 
-    .box {
-      border-radius: 3px;
-      margin: auto;
-      padding: 12px;
-    }
+      body {
+        background-color: #f9f9f9;
+        font-family: Inter;
+      }
 
-    .lightbox {
-      zoom: 1.5;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      margin: auto;
-    }
+      .box {
+        border-radius: 3px;
+        margin: auto;
+        padding: 12px;
+        text-align: center;
+      }
 
-    div.horizontal {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-    }
+      .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+      }
 
-    div.vertical {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-    }
+      div.horizontal {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
 
-    input {
-      padding: 1em;
-      width: 250px;
-      font-size: 14px;
-      border: 2px solid #f1f1f1;
-      border-radius: 6px;
-    }
+      div.vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
 
-    input:focus {
-      outline-color: #2d2c2d;
-    }
+      input {
+        padding: 1em;
+        width: 250px;
+        font-size: 16px;
+        border: 2px solid #fff;
+        background: #fff
+        border-radius: 6px;
+      }
+
+      input:focus {
+        outline-color: #f1f1f1 ;
+      }
   </style>
 
   <body>
@@ -58,6 +70,13 @@
       <div class="horizontal">
         <div class="vertical">
           <div class="box">
+            <p
+              style="width:360px; font-size: 14px; line-height: 20px; color: #171717"
+            >
+              Due to NDA, I cannot disclose certain details of my work publicly.
+              To access this case study, please enter the password below or
+              contact me directly.
+            </p>
             <input
               style="margin: 16px;"
               id="password"
