@@ -442,8 +442,11 @@ img {
   content: "Coming soon";
 }
 
-.box3:hover .done-description:before,
 .box1:hover .done-description:before {
+  content: "View case study 🔒";
+}
+
+.box3:hover .done-description:before {
   content: "View case study";
 }
 

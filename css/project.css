@@ -162,6 +162,12 @@ hr {
   line-height: 28px;
 }
 
+.subtitle {
+  font-size: 26px;
+  line-height: 38px !important;
+  font-weight: 500;
+}
+
 .col {
   padding: 20px;
   width: 24%;
