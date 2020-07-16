@@ -4,7 +4,7 @@
     <title>Divya Polson - Homio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/project.min.css" />
     <link rel="stylesheet" href="css/fontello.min.css" />
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script async src="js/ga.js"></script>
@@ -83,6 +83,10 @@
       </div>
       <div class="images">
         <img
+          style=" padding-top: 40px; width: 60%;"
+          data-src="assets/homio/illo.png"
+        />
+        <img
           style="padding-top: 144px; width: 80%;"
           data-src="assets/homio/overview.png"
         />
@@ -93,52 +97,76 @@
       style=" padding-top: 144px;width: 100%;"
       data-src="assets/homio/problem.png"
     />
-    <div style="padding-top: 144px;" class="section">
-      <h2 class="section-heading">Narrowing our focus</h2>
-    </div>
-    <div class="sub-section">
-      <div style="padding-right: 10%;">
-        <p class="sub-heading">WHO</p>
-        <h2 style="padding: 0;">Ages 15 to 25</h2>
-        <p>
-          Adolescent and young adult age is when panic attacks typically onset
-          and peak, according .
-        </p>
-        <p>
-          Major life changes during these years (for example, transitioning from
-          high school to college) often result in stressful environments.
-        </p>
+
+    <div>
+      <div style="padding-top: 144px; " class="section">
+        <h2 class="section-heading">Narrowing our focus</h2>
       </div>
-      <img style="max-height: 318px;" data-src="assets/homio/who.png" />
-    </div>
-    <div class="sub-section">
-      <img style="max-height: 318px;" data-src="assets/homio/where.png" />
-      <div style="padding-left: 10%;">
-        <p class="sub-heading">WHERE</p>
-        <h2 style="padding: 0;">The classroom</h2>
-        <p>
-          Panic attacks happen without warning at anywhere, anytime—experiencing
-          one in a public setting adds anxiety to this already mentally and
-          physically debilitating event.
-        </p>
-        <p>
-          We narrowed in on classrooms because among our target users, this is
-          where they spend much of their day and it is often a source of stress.
-        </p>
+      <div class="sub-section">
+        <div
+          class="image-holder"
+          style="margin-right: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
+        >
+          <p class="sub-heading">WHO</p>
+          <h2 style="padding: 0;">Ages 15 to 25</h2>
+          <p>
+            Adolescent and young adult age is when panic attacks typically onset
+            and peak.
+          </p>
+          <p>
+            Major life changes during these years (for example, transitioning
+            from high school to college) often result in stressful environments.
+          </p>
+        </div>
+        <div
+          class="image-holder"
+          style="background-image: url('assets/homio/who.png'); flex:1;"
+        ></div>
       </div>
-    </div>
-    <div class="sub-section">
-      <div style="padding-right: 10%;">
-        <p class="sub-heading">WHEN</p>
-        <h2 style="padding: 0;">Real time support</h2>
-        <p>
-          Our response is in no way meant to be a replacement for therapy and
-          other long-term recovery methods. Rather, our goal is to support
-          individuals in the highly focused moment of a panic attack, when they
-          feel least in control.
-        </p>
+      <div class="sub-section">
+        <!-- <img style="flex:1;" data-src="assets/homio/where.png" /> -->
+        <div
+          class="image-holder"
+          style="background-image: url('assets/homio/where.png');"
+        ></div>
+        <div
+          class="image-holder"
+          style="margin-left: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
+        >
+          <p class="sub-heading">WHERE</p>
+          <h2 style="padding: 0;">The classroom</h2>
+          <p>
+            Panic attacks happen without warning at anywhere,
+            anytime—experiencing one in a public setting adds anxiety to this
+            already mentally and physically debilitating event.
+          </p>
+          <p>
+            We narrowed in on classrooms because among our target users, this is
+            where they spend much of their day and it is often a source of
+            stress.
+          </p>
+        </div>
       </div>
-      <img style="max-height: 318px;" data-src="assets/homio/when.png" />
+      <div class="sub-section">
+        <div
+          class="image-holder"
+          style="margin-right: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
+        >
+          <p class="sub-heading">WHEN</p>
+          <h2 style="padding: 0;">Real time support</h2>
+          <p>
+            Our response is in no way meant to be a replacement for therapy and
+            other long-term recovery methods. Rather, our goal is to support
+            individuals in the highly focused moment of a panic attack, when
+            they feel least in control.
+          </p>
+        </div>
+        <div
+          class="image-holder"
+          style="background-image: url('assets/homio/when.png'); flex:1;"
+        ></div>
+        <!-- <img style="flex:1;" data-src="assets/homio/when.png" /> -->
+      </div>
     </div>
     <div style="color: #fef0d3;" class="hmw">
       <p style="font-size: 18px; opacity: 0.5; color: #000;">
@@ -148,74 +176,70 @@
       <span style="opacity: 0.5;">discreetly</span> ease their panic attack
       symptoms?
     </div>
-    <div>
-      <div class="section">
-        <h2 class="section-heading">Deep dive into research</h2>
-        <h2 style="padding-top: 80px;">Cultural probes</h2>
-        <p>
-          As panic attacks are such uniquely individual occurrences, it was
-          important for us to capture information on behaviors and attitudes
-          surrounding panic attacks and get a closer glimpse into people's
-          stories. We distributed two cultural probes to six participants that
-          reported a history of panic attacks.
-        </p>
-        <div style="padding-top: 50px;">
-          <div style="display: inline-block;" class="circle">
-            1
-          </div>
-          <p
-            style="display: inline-block; padding-left: 1em;"
-            class="sub-heading"
-          >
-            UNDERSTANDING THE LIVED EXPERIENCE
-          </p>
-        </div>
-        <p>
-          Our first probe aimed to address the following research questions:
-        </p>
-        <ul>
-          <li>How are people affected physically during a panic attack?</li>
-          <li>How do they perceive those symptoms?</li>
-        </ul>
-      </div>
-      <div class="images">
-        <img style="width: 85%;" data-src="assets/homio/probe1.png" />
-        <p class="caption">
-          Participants indicated their panic attack symptoms by drawing,
-          shading, and/or writing short descriptions.
-        </p>
-      </div>
-      <div class="section">
+    <div class="section">
+      <h2 class="section-heading">Deep dive into research</h2>
+      <h2 style="padding-top: 80px;">Cultural probes</h2>
+      <p>
+        As panic attacks are such uniquely individual occurrences, it was
+        important for us to capture information on behaviors and attitudes
+        surrounding panic attacks and get a closer glimpse into people's
+        stories. We distributed two cultural probes to six participants that
+        reported a history of panic attacks.
+      </p>
+      <div style="padding-top: 50px;">
         <div style="display: inline-block;" class="circle">
-          2
+          1
         </div>
         <p
           style="display: inline-block; padding-left: 1em;"
           class="sub-heading"
         >
-          MAPPING THE CURRENT SUPPORT SYSTEM
-        </p>
-        <p>Our second probe was aimed at understanding:</p>
-        <ul>
-          <li>
-            To what extent do people feel supported by those in their
-            surrounding network?
-          </li>
-          <li>
-            Do they feel comfortable with the individuals in their circle and
-            understood by them when it comes to their panic attacks?
-          </li>
-        </ul>
-      </div>
-      <div style="padding-bottom: 100px;" class="images">
-        <img style="width: 100%;" data-src="assets/homio/probe2.png" />
-        <p class="caption">
-          Participants sorted various members in their life along this spectrum
-          of awareness and support.
+          UNDERSTANDING THE LIVED EXPERIENCE
         </p>
       </div>
-      <!-- <h2>Survey</h2> -->
-      <!-- <p class="subheading">Online survey follow-up</p>
+      <p>
+        Our first probe aimed to address the following research questions:
+      </p>
+      <ul>
+        <li>How are people affected physically during a panic attack?</li>
+        <li>How do they perceive those symptoms?</li>
+      </ul>
+    </div>
+    <div class="images">
+      <img style="width: 85%;" data-src="assets/homio/probe1.png" />
+      <p class="caption">
+        Participants indicated their panic attack symptoms by drawing, shading,
+        and/or writing short descriptions.
+      </p>
+    </div>
+    <div class="section">
+      <div style="display: inline-block;" class="circle">
+        2
+      </div>
+      <p style="display: inline-block; padding-left: 1em;" class="sub-heading">
+        MAPPING THE CURRENT SUPPORT SYSTEM
+      </p>
+      <p>Our second probe was aimed at understanding:</p>
+      <ul>
+        <li>
+          To what extent do people feel supported by those in their surrounding
+          network?
+        </li>
+        <li>
+          Do they feel comfortable with the individuals in their circle and
+          understood by them when it comes to their panic attacks?
+        </li>
+      </ul>
+    </div>
+    <div style="padding-bottom: 100px;" class="images">
+      <img style="width: 100%;" data-src="assets/homio/probe2.png" />
+      <p class="caption">
+        Participants sorted various members in their life along this spectrum of
+        awareness and support.
+      </p>
+    </div>
+    <!-- <h2>Survey</h2> -->
+    <!-- <p class="subheading">Online survey follow-up</p>
       <br />
       <p>
         We made the big assumption that those experiencing panic attacks would
@@ -229,39 +253,108 @@
           What kind of support do people want?
         </li>
       </ul> -->
-      <!-- <div style="background-color: #f5f9fb;">
-        <div class="section">
-          <h2>Key insights</h2>
-          <div>
-            <div style="display: inline-block;" class="circle">
-              1
-            </div>
-            <p
-              style="display: inline-block; padding-left: 1em;"
-              class="sub-heading"
-            >
-              MAPPING THE CURRENT SUPPORT SYSTEM
-            </p>
-          </div>
-          <div style="display: inline-block;" class="circle">
-            2
-          </div>
-          <p
-            style="display: inline-block; padding-left: 1em;"
-            class="sub-heading"
-          >
-            MAPPING THE CURRENT SUPPORT SYSTEM
+
+    <div style="background-color: #fff7e6; padding: 100px;">
+      <div class="section">
+        <h2 class="section-heading">Key Insights</h2>
+      </div>
+      <!-- <img
+        style=" padding-top: 144px; width: 100%;"
+        data-src="assets/homio/insight1.png"
+      />
+      <img style="width: 100%;" data-src="assets/homio/insight2.png" />
+      <img style="width: 100%;" data-src="assets/homio/insight3.png" /> -->
+
+      <div class="sub-section">
+        <img style="max-height: 370px;" data-src="assets/homio/hide.png" />
+        <div style="padding-left: 7%;">
+          <p class="sub-heading">PERCEPTION</p>
+          <h2 style="padding: 0;">
+            During a panic attack, people are self-conscious of how they are
+            perceived.
+          </h2>
+          <p>
+            They are hyperaware of how they appear to others and might try to
+            avoid drawing attention to themselves.
+          </p>
+          <p class="quote">
+            "Panic attacks are embarrassing, I don't want anyone to see me and
+            I'm too manic to keep up a conversation of any kind. I just want to
+            be alone. "
+          </p>
+          <p class="quote">"Don't talk to me, don't look at me."</p>
+        </div>
+      </div>
+
+      <div class="sub-section">
+        <img style="max-height: 370px;" data-src="assets/homio/support.png" />
+        <div style="padding-left: 7%;">
+          <p class="sub-heading">GETTING HELP</p>
+          <h2 style="padding: 0;">
+            External support was met with mixed responses.
+          </h2>
+          <p>
+            While some would reach out to close ones for support, others wanted
+            space to deal with it alone. Outsiders were generally not
+            well-equipped to recognize a panic attack and provide help.
+          </p>
+          <p class="quote">
+            "I was at work and didn't really feel comfortable enough with my
+            coworkers to let them know."
+          </p>
+          <p class="quote">"They told me to calm down which didn't help."</p>
+        </div>
+      </div>
+
+      <div class="sub-section">
+        <img
+          style="max-height: 370px;"
+          data-src="assets/homio/distraction.png"
+        />
+        <div style="padding-left: 7%;">
+          <p class="sub-heading">COPING METHODS</p>
+          <h2 style="padding: 0;">
+            Grounding exercises and distraction are common panic attack recovery
+            techniques.
+          </h2>
+          <p>
+            People asked trusted friends to distract them, played games on their
+            phone, or tried grounding exercises. Grounding exercises are a
+            strategy to bring people’s attention back to the present by
+            connecting them with the physical world. It involves focusing on
+            something they can touch, hear, smell, taste, or see.
           </p>
         </div>
-      </div> -->
+      </div>
+
+      <div class="images">
+        <img
+          style="width: 80%; padding-bottom: 1em;"
+          data-src="assets/homio/groundingexercises.png"
+        />
+        <p class="caption">
+          Grounding exercises are recommended by therapists as a way to engage
+          the five senses and relieve anxiety
+        </p>
+      </div>
+    </div>
+    <div style="padding-top: 144px;" class="section">
+      <h2 class="section-heading">Ideation</h2>
+      <p class="heading" style="padding-top: 80px;">Design principles</p>
+      <p>
+        Based on our research insights, we outlined the following three design
+        principles to guide our ideation.
+      </p>
+    </div>
+    <div class="images">
+      <img style="width:80%;" data-src="assets/homio/designprinciples.png" />
     </div>
     <div class="section">
-      <h2 class="section-heading">Ideation</h2>
-      <p class="heading">Brainstorm</p>
+      <p class="heading" style="padding-top: 80px;">Brainstorm</p>
       <p>
         We each brainstormed about 30 ideas for a total of 90 ideation sketches.
-        Together, we shared out our ideas and clustered them according to
-        themes.
+        Together, we shared out our ideas and affinity mapped them based on
+        recurring themes.
       </p>
     </div>
 
@@ -271,9 +364,6 @@
       <p class="caption">
         90 affinitized ideation sketches clustered based on response strategy
       </p>
-    </div>
-    <div class="images">
-      <img style="width: 40%;" data-src="assets/homio/criteria.png" />
     </div>
     <div class="section">
       <p class="heading">Down selection</p>
@@ -285,15 +375,20 @@
         concept:
       </p>
     </div>
+    <div class="images">
+      <img style="width: 40%;" data-src="assets/homio/criteria.png" />
+    </div>
     <br /><br /><br />
     <div style="background-color: #f5f9fb;">
       <div class="section">
         <p class="subheading">Initial Concept: Sensory Cube</p>
         <p>
-          Our sensory cube concept aimed to distract the user with various
-          sense-engaging visuals, scents, and textures embedded into each side.
-          This was meant to be portable, perhaps attached to a keychain for easy
-          access.
+          Our sensory cube concept aimed to lean into the power of grounding
+          exercises by distracting the user with various sense-engaging visuals,
+          scents, and textures embedded into each side. This was meant to be
+          portable, perhaps attached to a keychain for easy access. The goal is
+          to help divert people’s thoughts toward a more relaxed state, so they
+          can recover from the symptoms of a panic attack discreetly.
         </p>
       </div>
       <div class="images">
@@ -305,24 +400,6 @@
     <div>
       <div class="section">
         <h2 class="section-heading">Prototyping, testing, and iterating</h2>
-        <p class="heading">Leaning into the power of grounding exercises</p>
-        <p>
-          Our sensory cube concept was aimed at facilitating grounding
-          exercises. Therapists have recommended grounding exercises as a
-          strategy to bring people’s attention back to the present by connecting
-          them with the physical world around them. It encourages the users to
-          focus on something they can touch, hear, smell, taste, or see. We
-          believe a solution that leverages this can help divert people’s
-          thoughts toward a more relaxed state, so they can recover from the
-          symptoms of panic attack discreetly.
-        </p>
-      </div>
-      <div class="images">
-        <img
-          class="project-img"
-          data-src="assets/homio/groundingexercises.png"
-        />
-        <p class="caption">Grounding exercises engage the five senses</p>
       </div>
       <div class="section">
         <p class="heading">Low-fidelity prototyping</p>
@@ -369,14 +446,6 @@
           it promotes hydration, is easily accessible, and integrates seamlessly
           with the classroom setting.
         </p>
-      </div>
-      <div class="images">
-        <img
-          style="width:80%;"
-          class="project-img"
-          data-src="assets/homio/designprinciples.png"
-        />
-        <p class="caption">Design principles</p>
       </div>
     </div>
     <div style="background-color: #f5f9fb;">

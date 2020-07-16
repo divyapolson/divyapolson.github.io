@@ -35,7 +35,7 @@ h1 {
   font-size: 42px;
   font-weight: 800;
   color: #171717;
-  line-height: 55px;
+  line-height: 60px;
 }
 @keyframes animateSquiggles {
   0% {
@@ -55,11 +55,11 @@ h1 {
   }
 }
 .squiggle {
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.1rem;
   background-image: url(https://daks2k3a4ib2z.cloudfront.net/5825f89e8ad305816466d37f/583e146240b743510c55b186_techhire-wavy.svg);
   background-position: 0% 100%;
   background-repeat: repeat-x;
-  background-size: 200px;
+  background-size: 150px;
   text-decoration: none;
   color: #e74c3c;
 }
