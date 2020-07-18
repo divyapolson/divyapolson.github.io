@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 // HIDDEN CONTENT
 
 function verify() {
-  // I created the function, which is called onclick on the button
   if (document.getElementById("password").value === "Target2018") {
     document.getElementById("HIDDENDIV").classList.remove("hidden"); // Using class instead of inline CSS
     document.getElementById("credentials").classList.add("hidden"); // Hide the div containing the credentials
@@ -96,6 +95,8 @@ cta[2].onclick = function(){
     modal[2].style.display = "block";
 }
 
+
+
 var span = document.getElementsByClassName("close");
 span[0].onclick = function() {
     modal[0].style.display = "none";
@@ -107,40 +108,4 @@ span[2].onclick = function() {
     modal[2].style.display = "none";
 }
 
-  //carousel sliders
-  var swiper1 = new Swiper(".swiper1", {
-    slidesPerView: 3,
-    spaceBetween: 40,
-    pagination: {
-      el: ".swiper-pagination1",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    breakpoints: {
-      1340: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      906: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  var swiper2 = new Swiper(".swiper2", {
-    slidesPerView: 1,
-    calculateHeight: true,
-    pagination: {
-      el: ".swiper-pagination2",
-      clickable: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
 }
