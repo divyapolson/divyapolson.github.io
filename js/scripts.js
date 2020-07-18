@@ -81,6 +81,32 @@ function theDomHasLoaded(e) {
     document.addEventListener("scroll", onScroll, false);
   };
 
+// MODAL: https://codepen.io/JoshNezi/pen/GNawyK
+
+var modal = document.getElementsByClassName("modal");
+
+var cta = document.getElementsByClassName("cta");
+cta[0].onclick = function(){
+    modal[0].style.display = "block";
+}
+cta[1].onclick = function(){
+    modal[1].style.display = "block";
+}
+cta[2].onclick = function(){
+    modal[2].style.display = "block";
+}
+
+var span = document.getElementsByClassName("close");
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
+span[2].onclick = function() {
+    modal[2].style.display = "none";
+}
+
   //carousel sliders
   var swiper1 = new Swiper(".swiper1", {
     slidesPerView: 3,
