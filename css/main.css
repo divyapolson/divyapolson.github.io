@@ -395,6 +395,18 @@ img {
 
 .box2 {
   height: 70em;
+  /* background-image: linear-gradient(
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    url(../assets/homio/preview1.png); */
+  background-image: url(../assets/homio/preview1.png);
+  background-size: 120%;
+}
+
+.box3 {
+  height: 60em;
+  margin-top: -5em;
   background: #4e65a7;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.05),
@@ -405,18 +417,8 @@ img {
   background-size: 160%;
   background-position: center bottom;
 }
-.box3 {
-  height: 70em;
-  margin-top: -5em;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15)
-    ),
-    url(../assets/homio/preview.png);
-  background-size: 125%;
-}
 .box4 {
-  height: 60em;
+  height: 50em;
   background: #8dc2a2;
   margin-top: 5em;
   background-image: url(../assets/capstone/illo3.png);
@@ -439,7 +441,8 @@ img {
   font-weight: 200;
 }
 .description,
-.done-description {
+.done-description,
+.progress-description {
   position: relative;
   color: #f2f2f2;
   font-size: 32px;
@@ -450,7 +453,8 @@ img {
 }
 .description:hover span,
 .box1:hover .done-description span,
-.box3:hover .done-description span {
+.box2:hover .done-description span,
+.box4:hover .progress-description span {
   display: none;
 }
 
@@ -458,29 +462,36 @@ img {
   content: "Coming soon";
 }
 
+.box4:hover .progress-description:before {
+  content: "In progress";
+}
+
 .box1:hover .done-description:before {
   content: "View case study 🔒";
 }
 
-.box3:hover .done-description:before {
+.box2:hover .done-description:before {
   content: "View case study";
 }
 
 @media screen and (max-width: 667px) {
   .description,
-  .done-description {
+  .done-description,
+  .progress-description {
     font-size: 26px;
   }
 }
 .description:hover,
-.done-description:hover {
+.done-description:hover,
+.progress-description:hover {
   opacity: 0.7;
   transition: all ease 0.5s;
 }
 
 @media screen and (max-width: 568px) {
   .description,
-  .done-description {
+  .done-description,
+  .progress-description {
     font-size: 18px;
     width: 80%;
   }
