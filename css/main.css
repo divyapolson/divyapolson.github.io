@@ -327,9 +327,13 @@ img {
   transition: all ease 0.4s;
 }
 
-#work {
+#grid {
   background-color: #f5f9fb;
+}
+
+#work {
   width: 100vw;
+  max-width: 1600px;
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -382,7 +386,17 @@ img {
 }
 
 .box1 {
-  height: 60em;
+  height: 50em;
+  /* background: #a66abb; */
+  background: #834dc3;
+  background-image: url(../assets/alchemi/preview.png);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: center;
+}
+
+.box2 {
+  height: 65em;
   background: #c21a19;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.05),
@@ -393,20 +407,15 @@ img {
   background-position: center;
 }
 
-.box2 {
-  height: 70em;
-  /* background-image: linear-gradient(
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15)
-    ),
-    url(../assets/homio/preview1.png); */
+.box3 {
+  height: 65em;
+  margin-top: -10em;
   background-image: url(../assets/homio/preview1.png);
   background-size: 120%;
 }
-
-.box3 {
-  height: 60em;
-  margin-top: -5em;
+.box4 {
+  height: 50em;
+  margin-top: 5em;
   background: #4e65a7;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.05),
@@ -417,18 +426,8 @@ img {
   background-size: 160%;
   background-position: center bottom;
 }
-.box4 {
-  height: 50em;
-  background: #8dc2a2;
-  margin-top: 5em;
-  background-image: url(../assets/capstone/illo3.png);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center 70%;
-}
 @media screen and (max-width: 1274px) {
-  .box3,
-  .box4 {
+  .box3 {
     margin-top: 5em;
   }
 }
@@ -452,9 +451,8 @@ img {
   top: 0.5em;
 }
 .description:hover span,
-.box1:hover .done-description span,
 .box2:hover .done-description span,
-.box4:hover .progress-description span {
+.box3:hover .done-description span {
   display: none;
 }
 
@@ -462,36 +460,29 @@ img {
   content: "Coming soon";
 }
 
-.box4:hover .progress-description:before {
-  content: "In progress";
-}
-
-.box1:hover .done-description:before {
+.box2:hover .done-description:before {
   content: "View case study 🔒";
 }
 
-.box2:hover .done-description:before {
+.box3:hover .done-description:before {
   content: "View case study";
 }
 
 @media screen and (max-width: 667px) {
   .description,
-  .done-description,
-  .progress-description {
+  .done-description {
     font-size: 26px;
   }
 }
 .description:hover,
-.done-description:hover,
-.progress-description:hover {
+.done-description:hover {
   opacity: 0.7;
   transition: all ease 0.5s;
 }
 
 @media screen and (max-width: 568px) {
   .description,
-  .done-description,
-  .progress-description {
+  .done-description {
     font-size: 18px;
     width: 80%;
   }
