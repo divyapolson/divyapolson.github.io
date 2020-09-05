@@ -180,9 +180,9 @@ hr {
   width: 24%;
 }
 .metadata-desc {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 @media only screen and (max-width: 668px) {
@@ -224,6 +224,7 @@ hr {
   font-weight: 900;
   margin-bottom: 1em;
   padding: 0.5em 0;
+  line-height: 60px;
 }
 
 .section-heading:after {
@@ -235,6 +236,10 @@ hr {
   bottom: 0;
   left: 50%;
   margin: 0px 0px 0px -20px;
+}
+
+.white:after {
+  background: #fff;
 }
 
 .sub-heading {
@@ -252,6 +257,19 @@ hr {
   margin: 0 auto;
   padding: 6em;
   line-height: 30px;
+  height: auto;
+}
+
+.insights {
+  padding: 3em 6em;
+}
+
+.userstory {
+  background-color: #fff;
+  text-align: left;
+  margin-top: 100px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 .image-holder {
@@ -269,6 +287,18 @@ hr {
   opacity: 0.7;
 }
 
+.trio {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  padding: 80px 0;
+}
+
+.trio p {
+  padding: 0 10px;
+}
+
 .circle {
   width: 40px;
   height: 40px;
@@ -281,7 +311,8 @@ hr {
   font-weight: 900;
 }
 
-.cta {
+.cta,
+.cta-link {
   font-size: 16px;
   font-weight: 500;
   padding: 0.5em 1em;
@@ -293,11 +324,21 @@ hr {
   cursor: pointer;
 }
 
-.cta:hover {
+.cta:hover,
+.cta-link:hover {
   opacity: 1;
   background-color: #e74c3c;
   color: #fff !important;
   transition: all ease 0.4s;
+}
+
+.purple:hover {
+  background-color: #23183f;
+}
+
+.whitecta:hover {
+  color: #23183f !important;
+  background-color: #fff;
 }
 
 /* modal */

@@ -391,7 +391,7 @@ img {
   background: #834dc3;
   background-image: url(../assets/alchemi/preview.png);
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -410,7 +410,7 @@ img {
 .box3 {
   height: 65em;
   margin-top: -10em;
-  background-image: url(../assets/homio/preview1.png);
+  background-image: url(../assets/homio/preview.png);
   background-size: 120%;
 }
 .box4 {
@@ -483,8 +483,9 @@ img {
 @media screen and (max-width: 568px) {
   .description,
   .done-description {
-    font-size: 18px;
+    font-size: 20px;
     width: 80%;
+    margin-top: 0px;
   }
   .metadata,
   .project-info h3 {

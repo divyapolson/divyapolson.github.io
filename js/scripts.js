@@ -80,32 +80,35 @@ function theDomHasLoaded(e) {
     document.addEventListener("scroll", onScroll, false);
   };
 
-// MODAL: https://codepen.io/JoshNezi/pen/GNawyK
+  // MODAL: https://codepen.io/JoshNezi/pen/GNawyK
 
-var modal = document.getElementsByClassName("modal");
+  var modal = document.getElementsByClassName("modal");
 
-var cta = document.getElementsByClassName("cta");
-cta[0].onclick = function(){
+  var cta = document.getElementsByClassName("cta");
+  cta[0].onclick = function() {
     modal[0].style.display = "block";
-}
-cta[1].onclick = function(){
+  };
+  cta[1].onclick = function() {
     modal[1].style.display = "block";
-}
-cta[2].onclick = function(){
+  };
+  cta[2].onclick = function() {
     modal[2].style.display = "block";
-}
+  };
+  cta[3].onclick = function() {
+    modal[3].style.display = "block";
+  };
 
-
-
-var span = document.getElementsByClassName("close");
-span[0].onclick = function() {
+  var span = document.getElementsByClassName("close");
+  span[0].onclick = function() {
     modal[0].style.display = "none";
-}
-span[1].onclick = function() {
+  };
+  span[1].onclick = function() {
     modal[1].style.display = "none";
-}
-span[2].onclick = function() {
+  };
+  span[2].onclick = function() {
     modal[2].style.display = "none";
-}
-
+  };
+  span[3].onclick = function() {
+    modal[3].style.display = "none";
+  };
 }
