@@ -435,12 +435,17 @@ img {
   position: absolute;
   color: #f2f2f2;
 }
+
+.no-hover {
+  opacity: 1 !important;
+}
+
 .metadata {
   font-size: 14px;
   font-weight: 200;
 }
 .description,
-.done-description,
+.locked-description,
 .progress-description {
   position: relative;
   color: #f2f2f2;
@@ -450,41 +455,43 @@ img {
   width: 13em;
   top: 0.5em;
 }
-.description:hover span,
-.box1:hover .done-description span,
-.box2:hover .done-description span,
-.box3:hover .done-description span {
+
+.etc {
+  top: -0.5em;
+}
+
+.progress-description:hover span,
+.box1:hover .description span,
+.box2:hover .locked-description span,
+.box3:hover .description span {
   display: none;
 }
 
-.description:hover:before {
+.progress-description:hover:before {
   content: "Coming soon";
 }
 
-.box2:hover .done-description:before {
+.box2:hover .locked-description:before {
   content: "View case study 🔒";
 }
 
-.box1:hover .done-description:before,
-.box3:hover .done-description:before {
+.box1:hover .description:before,
+.box3:hover .description:before {
   content: "View case study";
 }
 
 @media screen and (max-width: 667px) {
   .description,
-  .done-description {
+  .locked-description,
+  .progress-description {
     font-size: 26px;
   }
-}
-.description:hover,
-.done-description:hover {
-  opacity: 0.7;
-  transition: all ease 0.5s;
 }
 
 @media screen and (max-width: 568px) {
   .description,
-  .done-description {
+  .locked-description,
+  .progress-description {
     font-size: 20px;
     width: 80%;
     margin-top: 0px;
@@ -495,7 +502,7 @@ img {
   }
   .capstone,
   .homio,
-  .prototyping,
+  .etc,
   .target {
     right: 0;
     left: 0;
