@@ -410,7 +410,7 @@ img {
 .box3 {
   height: 65em;
   margin-top: -10em;
-  background-image: url(../assets/homio/preview.png);
+  background-image: url(../assets/homio/preview1.png);
   background-size: 120%;
 }
 .box4 {
@@ -451,6 +451,7 @@ img {
   top: 0.5em;
 }
 .description:hover span,
+.box1:hover .done-description span,
 .box2:hover .done-description span,
 .box3:hover .done-description span {
   display: none;
@@ -464,6 +465,7 @@ img {
   content: "View case study 🔒";
 }
 
+.box1:hover .done-description:before,
 .box3:hover .done-description:before {
   content: "View case study";
 }
