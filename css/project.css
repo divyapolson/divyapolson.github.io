@@ -474,10 +474,23 @@ input:focus {
   padding: 0.5em 1em 5em 1em;
 }
 
+.footer-nav {
+  background: #171717;
+  padding: 8em;
+  text-align: center;
+  color: #fff;
+  margin-top: -3px;
+}
+
+.footer-nav a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .footer {
   bottom: 0;
   text-align: center;
-  padding: 8em 0;
+  padding: 5em 0;
   font-size: 18px;
 }
 
