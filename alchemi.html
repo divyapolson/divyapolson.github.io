@@ -33,9 +33,16 @@
     </div>
 
     <img
+      class="header-img1"
       style="width: 100vw;
     height: auto;"
       src="assets/alchemi/header.png"
+    />
+    <img
+      class="header-img2"
+      style="width: 100vw;
+    height: auto; display: none;"
+      src="assets/alchemi/preview.png"
     />
     <div class="metadata-grid">
       <div class="col">
@@ -80,14 +87,17 @@
         </p>
       </div>
       <div class="images" style="padding-bottom: 140px;">
-        <iframe
-          src="https://player.vimeo.com/video/453773295?&portrait=0&byline=0"
-          width="960"
-          height="540"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
+        <div class="vid-container">
+          <iframe
+            class="responsive-iframe"
+            src="https://player.vimeo.com/video/453773295?&portrait=0&byline=0"
+            width="900"
+            height="506"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <img style="width: 100%;" data-src="assets/alchemi/hero.jpg" />
       <div style="background: #FAFAFA; padding: 140px 0;">
@@ -103,21 +113,21 @@
           <div class="trio">
             <div>
               <img data-src="assets/alchemi/amy1.png" />
-              <p>
+              <p class="trio-item">
                 Amy loves arts and crafts. At school, she's known as the artist
                 of her friend group.
               </p>
             </div>
             <div>
               <img data-src="assets/alchemi/amy2.png" />
-              <p>
+              <p class="trio-item">
                 Science class is her favorite--she can get hands on and learn
                 using new tools and materials.
               </p>
             </div>
             <div>
               <img data-src="assets/alchemi/amy3.png" />
-              <p>
+              <p class="trio-item">
                 During play dates with her friend Priya, Amy likes roleplaying
                 and imagining stories about saving the world.
               </p>
@@ -144,7 +154,7 @@
           </div>
           <div
             class="image-holder"
-            style="background-image: url('assets/alchemi/amy4.png'); flex:1;"
+            style="background-image: url('assets/alchemi/amy4.png');"
           ></div>
         </div>
         <div class="sub-section userstory">
@@ -191,7 +201,7 @@
           </div>
           <div
             class="image-holder"
-            style="background-image: url('assets/alchemi/amy6.png'); flex:1;"
+            style="background-image: url('assets/alchemi/amy6.png');"
           ></div>
         </div>
       </div>
@@ -229,47 +239,71 @@
           <h2 class="section-heading">Mission</h2>
         </div>
 
-        <div class="images">
-          <div class="trio" style="align-items: flex-start;">
-            <div style="flex-basis: 25%; flex-grow: 0; margin:0 10px;">
-              <img data-src="assets/alchemi/mission1.png" />
-              <h2 style="padding: 0;">
-                Inclusive
-              </h2>
-              <p>
-                Alchemi highlights characters with diverse backgrounds,
-                interests and needs, and defaults to an underrepresented lead.
-              </p>
+        <div class="images" style="padding-bottom: 80px;">
+          <div class="trio mission" style="align-items: flex-start;">
+            <div>
+              <img
+                class="mission-img"
+                style="padding: 0 2em; width: 300px;"
+                data-src="assets/alchemi/mission1.png"
+              />
+              <div class="trio-item">
+                <h2 style="padding: 0;">
+                  Inclusive
+                </h2>
+                <p>
+                  Alchemi highlights characters with diverse backgrounds,
+                  interests and needs, and defaults to an underrepresented lead.
+                </p>
+              </div>
             </div>
-            <div style="flex-basis: 25%; flex-grow: 0; margin:0 10px;">
-              <img data-src="assets/alchemi/mission2.png" />
-              <h2 style="padding: 0;">
-                Iteration
-              </h2>
-              <p>
-                The game encourages experimentation without fear of failure,
-                using delightful outcomes and supportive messaging.
-              </p>
+            <div>
+              <img
+                class="mission-img"
+                style="padding: 0 2em; width: 300px;"
+                data-src="assets/alchemi/mission2.png"
+              />
+              <div class="trio-item">
+                <h2 style="padding: 0;">
+                  Iteration
+                </h2>
+                <p>
+                  The game encourages experimentation without fear of failure,
+                  using delightful outcomes and supportive messaging.
+                </p>
+              </div>
             </div>
-            <div style="flex-basis: 25%; flex-grow: 0; margin:0 10px;">
-              <img data-src="assets/alchemi/mission3.png" />
-              <h2 style="padding: 0;">
-                Creativity
-              </h2>
-              <p>
-                When creating recipes, kids have the power to tell their own
-                stories and explore new storylines with characters.
-              </p>
+            <div>
+              <img
+                class="mission-img"
+                style="padding: 0 2em; width: 300px;"
+                data-src="assets/alchemi/mission3.png"
+              />
+              <div class="trio-item">
+                <h2 style="padding: 0;">
+                  Creativity
+                </h2>
+                <p>
+                  When creating recipes, kids have the power to tell their own
+                  stories and explore new storylines with characters.
+                </p>
+              </div>
             </div>
-            <div style="flex-basis: 25%; flex-grow: 0; margin:0 10px;">
-              <img data-src="assets/alchemi/mission4.png" />
-              <h2 style="padding: 0;">
-                Community
-              </h2>
-              <p>
-                Kids share in-game experiences with their friends and promote
-                community by discovering and building upon others' recipes.
-              </p>
+            <div>
+              <img
+                class="mission-img"
+                style="padding: 0 2em; width: 300px;"
+                data-src="assets/alchemi/mission4.png"
+              />
+              <div class="trio-item">
+                <h2 style="padding: 0;">
+                  Community
+                </h2>
+                <p>
+                  Kids share in-game experiences with their friends and promote
+                  community by discovering and building upon others' recipes.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -277,11 +311,38 @@
       <div style="background-color: #fafafa; padding: 140px 0;">
         <div class="section">
           <h2 class="section-heading">Blocks</h2>
+          <div class="blocks2" style="display: none;">
+            <p>
+              Alchemi leverages a drag-and-drop visual programming interface for
+              creating recipe commands. Players select and combine blocks in
+              unique ways, building sets upon each other to develop a creative
+              potion algorithm.
+            </p>
+            <p>
+              Our block design has signifiers to indicate how blocks can be
+              placed together and the possibilities for connection. Ridges and
+              outlines have been thoughtfully crafted to mimic a puzzle-like fit
+              and suggest likely block groupings.
+            </p>
+            <p>
+              Additionally, we carefully selected accessible colors for our
+              blocks as none of the leading computation education platforms
+              (including Scratch) do so.
+            </p>
+          </div>
         </div>
+
         <img
+          class="blocks1"
           style="padding-top: 80px;"
           width="100%"
           data-src="assets/alchemi/blocks.png"
+        />
+        <img
+          class="blocks2"
+          style="padding-top: 80px; display: none;"
+          width="100%"
+          data-src="assets/alchemi/blocks2.png"
         />
         <div style="text-align:center; padding: 80px 0;">
           <a
@@ -316,21 +377,36 @@
             out the potion.
           </p>
         </div>
-        <div style="width: 100vw; text-align:center;">
-          <iframe
-            src="https://player.vimeo.com/video/449184871?&portrait=0&byline=0"
-            width="900"
-            height="700"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+        <div class="images">
+          <div class="vid-container">
+            <iframe
+              class="responsive-iframe"
+              src="https://player.vimeo.com/video/449184871?&portrait=0&byline=0"
+              width="900"
+              height="700"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
       <div style="background: #23183F; color: #fff;">
         <div class="sub-section" style="padding-top: 140px;">
-          <div style="width: 60%;">
+          <div class="right-small-box feature-desc-top" style="display: none;">
+            <p class="subtitle" style="color: #fff;">
+              A magical creature enters the emporium...
+            </p>
+            <p style="color: #fff;">
+              Players can choose to take on the challenge or skip to another
+              request. Creatures have a diverse range of physical and emotional
+              problems, inspired by our co-design session with children.
+            </p>
+          </div>
+
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe "
               src="https://player.vimeo.com/video/454910725?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -339,7 +415,8 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div style="padding-left: 7%;">
+
+          <div class="right-small-box feature-desc">
             <p class="subtitle" style="color: #fff;">
               A magical creature enters the emporium...
             </p>
@@ -352,7 +429,7 @@
         </div>
 
         <div class="sub-section">
-          <div style="padding-right: 7%;">
+          <div class="left-small-box">
             <p class="subtitle" style="color: #fff;">
               Follow along recipe
             </p>
@@ -362,8 +439,9 @@
               steps, and are designed to promote computational thinking.
             </p>
           </div>
-          <div style="width: 60%;">
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910811?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -374,8 +452,21 @@
           </div>
         </div>
         <div class="sub-section">
-          <div style="width: 60%;">
+          <div class="right-small-box feature-desc-top" style="display: none;">
+            <p class="subtitle" style="color: #fff;">
+              Drag-and-drop code
+            </p>
+            <p style="color: #fff;">
+              Players sift through cabinets to locate the blocks they need,
+              dragging and dropping various combinations together to translate
+              the instructions into code. The progress bar at the bottom of the
+              screen tracks the player’s progress as they advance through the
+              recipe.
+            </p>
+          </div>
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910777?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -384,7 +475,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div style="padding-left: 7%;">
+          <div class="right-small-box feature-desc">
             <p class="subtitle" style="color: #fff;">
               Drag-and-drop code
             </p>
@@ -398,7 +489,7 @@
           </div>
         </div>
         <div class="sub-section">
-          <div style="padding-right: 7%;">
+          <div class="left-small-box">
             <p class="subtitle" style="color: #fff;">
               Brew potion
             </p>
@@ -409,8 +500,9 @@
               the current line of instruction if there is an error.
             </p>
           </div>
-          <div style="width: 60%;">
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910736?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -421,8 +513,20 @@
           </div>
         </div>
         <div class="sub-section">
-          <div style="width: 60%;">
+          <div class="right-small-box feature-desc-top" style="display: none;">
+            <p class="subtitle" style="color: #fff;">
+              Debug and experiment
+            </p>
+            <p style="color: #fff;">
+              During the runthrough, mistakes and potion explosions might occur.
+              When this happens, players are encouraged to try again and make
+              tweaks to their code. The mushroom report emphasizes the player’s
+              effort and growth, rather than their failure.
+            </p>
+          </div>
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910747?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -431,7 +535,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div style="padding-left: 7%;">
+          <div class="right-small-box feature-desc">
             <p class="subtitle" style="color: #fff;">
               Debug and experiment
             </p>
@@ -444,7 +548,7 @@
           </div>
         </div>
         <div class="sub-section" style="padding-bottom: 140px;">
-          <div style="padding-right: 7%;">
+          <div class="left-small-box">
             <p class="subtitle" style="color: #fff;">
               Happy customer
             </p>
@@ -454,8 +558,9 @@
               and the challenge is complete!
             </p>
           </div>
-          <div style="width: 60%;">
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910840?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -480,21 +585,36 @@
             aspect of the world.
           </p>
         </div>
-        <div style="width: 100vw; text-align:center;">
-          <iframe
-            src="https://player.vimeo.com/video/449184009?&portrait=0&byline=0"
-            width="900"
-            height="700"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+        <div class="images">
+          <div class="vid-container">
+            <iframe
+              class="responsive-iframe"
+              src="https://player.vimeo.com/video/449184009?&portrait=0&byline=0"
+              width="900"
+              height="700"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
       <div style="background: #23183F; color: #fff;">
         <div class="sub-section" style="padding-top: 140px;">
-          <div style="width: 60%;">
+          <div class="right-small-box feature-desc-top" style="display: none;">
+            <p class="subtitle" style="color: #fff;">
+              Creature storytelling
+            </p>
+            <p style="color: #fff;">
+              Players select from a diverse set of magical creatures and can
+              fill in storytelling details such as their origin, likes,
+              dislikes, and problems.
+            </p>
+          </div>
+
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910886?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -503,7 +623,8 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div style="padding-left: 7%;">
+
+          <div class="right-small-box feature-desc">
             <p class="subtitle" style="color: #fff;">
               Creature storytelling
             </p>
@@ -516,7 +637,7 @@
         </div>
 
         <div class="sub-section">
-          <div style="padding-right: 7%;">
+          <div class="left-small-box">
             <p class="subtitle" style="color: #fff;">
               Code and brew
             </p>
@@ -527,8 +648,9 @@
               readable recipe instructions.
             </p>
           </div>
-          <div style="width: 60%;">
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910874?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -539,8 +661,19 @@
           </div>
         </div>
         <div class="sub-section">
-          <div style="width: 60%;">
+          <div class="right-small-box feature-desc-top" style="display: none;">
+            <p class="subtitle" style="color: #fff;">
+              Add finishing touches
+            </p>
+            <p style="color: #fff;">
+              Once they’re happy with their creation, players can customize the
+              potion’s taste, smell, consistency, and even draw out the design
+              of the potion bottle.
+            </p>
+          </div>
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910862?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -549,7 +682,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div style="padding-left: 7%;">
+          <div class="right-small-box feature-desc">
             <p class="subtitle" style="color: #fff;">
               Add finishing touches
             </p>
@@ -561,7 +694,7 @@
           </div>
         </div>
         <div class="sub-section" style="padding-bottom: 140px;">
-          <div style="padding-right: 7%;">
+          <div class="left-small-box">
             <p class="subtitle" style="color: #fff;">
               Share
             </p>
@@ -571,8 +704,9 @@
               community.
             </p>
           </div>
-          <div style="width: 60%;">
+          <div class="vid-container feature-item">
             <iframe
+              class="responsive-iframe"
               src="https://player.vimeo.com/video/454910928?autoplay=1&loop=1&autopause=0&muted=1"
               width="550"
               height="300"
@@ -583,6 +717,7 @@
           </div>
         </div>
       </div>
+
       <div style="background: #171717; color: #fff; padding: 140px 0;">
         <div class="section">
           <p class="sub-heading" style="color: #A04CE1;">
@@ -613,10 +748,10 @@
         </div>
         <div class="sub-section">
           <img
-            style="height: 450px;"
+            style="width: 40%; padding-bottom: 50px;"
             data-src="assets/alchemi/creativecoding.png"
           />
-          <div style="padding-left: 7%; height: 450px;">
+          <div class="right-box">
             <p class="sub-heading" style="color: #A04CE1;">
               Framing the space
             </p>
@@ -643,7 +778,12 @@
           </div>
         </div>
         <div class="sub-section">
-          <div style="padding-right: 7%; height: 450px;">
+          <div class="left-box">
+            <img
+              class="illo1"
+              style="width: 40%; display: none; padding-bottom: 50px;"
+              data-src="assets/alchemi/illo.png"
+            />
             <p class="sub-heading" style="color: #A04CE1;">
               Secondary research and competitive analysis
             </p>
@@ -672,7 +812,11 @@
               >
             </div>
           </div>
-          <img style="height: 450px;" data-src="assets/alchemi/illo.png" />
+          <img
+            class="illo2"
+            style="width: 40%;"
+            data-src="assets/alchemi/illo.png"
+          />
         </div>
         <div class="section">
           <p class="sub-heading" style="color: #A04CE1;">
@@ -709,7 +853,7 @@
         </div>
         <div class="images">
           <div class="trio" style="padding-top:0;">
-            <div style="margin: 0 2em;">
+            <div>
               <img height="200px;" data-src="assets/alchemi/sme.png" />
               <p class="subtitle">
                 4 Subject Matter Experts
@@ -732,7 +876,7 @@
                 </div>
               </div>
             </div>
-            <div style="margin: 0 2em;">
+            <div>
               <img height="200px;" data-src="assets/alchemi/cse.png" />
               <p class="subtitle">
                 4 Computer Science Educators
@@ -755,7 +899,7 @@
                 </div>
               </div>
             </div>
-            <div style="margin: 0 2em;">
+            <div>
               <img height="200px;" data-src="assets/alchemi/art.png" />
               <p class="subtitle">
                 3 Art Educators
@@ -805,7 +949,7 @@
         </div>
         <div class="sub-section insights">
           <img style="width: 300px;" data-src="assets/alchemi/insight1.png" />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <p class="sub-heading" style="color: #A04CE1;">
               Insight 01
             </p>
@@ -820,8 +964,11 @@
           </div>
         </div>
         <div class="sub-section insights">
-          <img style="width: 300px" data-src="assets/alchemi/insight2.png" />
-          <div style="padding-left: 7%;">
+          <img
+            style="width: 300px; padding-bottom: 20px; "
+            data-src="assets/alchemi/insight2.png"
+          />
+          <div class="right-box">
             <p class="sub-heading" style="color: #A04CE1;">
               Insight 02
             </p>
@@ -836,8 +983,11 @@
           </div>
         </div>
         <div class="sub-section insights">
-          <img style="width: 300px" data-src="assets/alchemi/insight3.png" />
-          <div style="padding-left: 7%;">
+          <img
+            style="width: 300px; padding-bottom: 20px;"
+            data-src="assets/alchemi/insight3.png"
+          />
+          <div class="right-box">
             <p class="sub-heading" style="color: #A04CE1;">
               Insight 03
             </p>
@@ -852,8 +1002,11 @@
           </div>
         </div>
         <div class="sub-section insights">
-          <img style="width: 300px" data-src="assets/alchemi/insight4.png" />
-          <div style="padding-left: 7%;">
+          <img
+            style="width: 300px; padding-bottom: 10px;"
+            data-src="assets/alchemi/insight4.png"
+          />
+          <div class="right-box">
             <p class="sub-heading" style="color: #A04CE1;">
               Insight 04
             </p>
@@ -1129,8 +1282,11 @@
           <h2 class="section-heading">Next steps</h2>
         </div>
         <div class="sub-section insights">
-          <img style="width: 300px;" data-src="assets/alchemi/nextstep1.png" />
-          <div style="padding-left: 7%;">
+          <img
+            style="width: 300px; padding-bottom: 20px;"
+            data-src="assets/alchemi/nextstep1.png"
+          />
+          <div class="right-box">
             <h2 style="padding: 0; color: #23183F">
               Develop community
             </h2>
@@ -1142,8 +1298,11 @@
           </div>
         </div>
         <div class="sub-section insights">
-          <img style="width: 300px" data-src="assets/alchemi/nextstep2.png" />
-          <div style="padding-left: 7%;">
+          <img
+            style="width: 300px; padding-bottom: 30px;"
+            data-src="assets/alchemi/nextstep2.png"
+          />
+          <div class="right-box">
             <h2 style="padding: 0; color: #23183F">
               Incorporate the arts
             </h2>
@@ -1157,7 +1316,7 @@
         </div>
         <div class="sub-section insights">
           <img style="width: 300px" data-src="assets/alchemi/nextstep3.png" />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <h2 style="padding: 0; color: #23183F">
               Explore collaborative play
             </h2>
@@ -1173,7 +1332,7 @@
 
         <div class="sub-section insights">
           <img style="width: 300px" data-src="assets/alchemi/nextstep4.png" />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <h2 style="padding: 0; color: #23183F">
               Add experimental outcomes
             </h2>
