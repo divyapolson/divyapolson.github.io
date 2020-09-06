@@ -426,7 +426,7 @@ img {
   background-size: 160%;
   background-position: center bottom;
 }
-@media screen and (max-width: 1274px) {
+@media screen and (max-width: 1233px) {
   .box3 {
     margin-top: 5em;
   }
