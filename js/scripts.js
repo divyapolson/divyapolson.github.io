@@ -80,6 +80,23 @@ function theDomHasLoaded(e) {
     document.addEventListener("scroll", onScroll, false);
   };
 
+  // Sidebar Nav Dots
+
+  const links = document.querySelectorAll(".toc-circle");
+  const sections = document.querySelectorAll(".nav-item");
+
+  function changeLinkState() {
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    links.forEach(link => link.classList.remove("active"));
+    links[index].classList.add("active");
+  }
+
+  changeLinkState();
+  window.addEventListener("scroll", changeLinkState);
+
   // MODAL: https://codepen.io/JoshNezi/pen/GNawyK
 
   var modal = document.getElementsByClassName("modal");

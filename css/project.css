@@ -202,7 +202,7 @@ hr {
 }
 
 .section {
-  width: 60vw;
+  width: 55vw;
   margin: 0 auto;
   padding: 3em 6em;
   line-height: 30px;
@@ -248,6 +248,7 @@ hr {
   padding: 6em;
   line-height: 30px;
   height: auto;
+  align-items: flex-start;
 }
 
 .insights {
@@ -546,6 +547,58 @@ input:focus {
   padding-left: 10px;
 }
 
+.no-hover {
+  opacity: 1 !important;
+}
+
+.toc {
+  position: fixed;
+  left: auto;
+  top: 0%;
+  right: 2%;
+  bottom: 0%;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.toc-circle {
+  height: 20px;
+  width: 20px;
+  border: 1.5px solid #969696;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.toc-title {
+  width: 100px;
+  color: #969696;
+  font-weight: 700;
+  margin-left: -7em;
+  margin-top: -2px;
+  white-space: nowrap;
+  display: none;
+}
+
+.toc-circle:hover .toc-title {
+  display: block;
+}
+
+.active {
+  background-color: #969696;
+}
+
+.toc-circle:hover {
+  background-color: #969696;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
 @media screen and (min-width: 1024px) {
   .mission-img {
     width: 200px;
@@ -610,10 +663,12 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .toc {
+    display: none;
+  }
   .header-img1 {
     display: none;
   }
-
   .header-img2 {
     display: block !important;
   }
