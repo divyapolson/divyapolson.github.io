@@ -241,7 +241,7 @@ hr {
 }
 
 .sub-section {
-  width: 85vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -599,10 +599,13 @@ input:focus {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .mission-img {
-    width: 200px;
+    width: 200px !important;
   }
+}
+
+@media screen and (min-width: 1024px) {
   .feature-item {
     padding-top: 0;
     width: 200%;
@@ -641,6 +644,9 @@ input:focus {
   .mission {
     max-width: 900px;
     padding: 0 1em;
+  }
+  .mission-img {
+    width: 300px !important;
   }
   .illo2,
   .blocks1,
