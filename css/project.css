@@ -271,6 +271,7 @@ hr {
   height: 400px;
   width: 40%;
   border-radius: 6px;
+  align-self: center;
 }
 
 .quote {

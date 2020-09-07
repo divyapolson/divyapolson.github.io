@@ -266,19 +266,18 @@ hr {
   }
 }
 .about-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 70vw;
   margin: 0 auto;
-  min-height: 100vh;
+  padding: 5%;
+  background-color: #fafafa;
 }
 .headshot {
-  width: 40%;
+  width: 90%;
   padding: 1.5em;
+  text-align: center;
+  margin: 5em auto;
 }
 .about-text {
+  margin: 0 auto;
   width: 60%;
   padding: 1.5em;
   line-height: 26px;
@@ -288,27 +287,12 @@ img {
   height: auto;
   border-radius: 10px;
 }
-@media screen and (max-width: 1112px) {
-  .about-container {
-    width: 100vw;
-    padding: 1em;
-  }
-}
 @media screen and (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-  }
-  .about-text,
   .headshot {
-    width: auto;
+    width: 100%;
   }
-}
-@media screen and (max-width: 568px) {
-  .about-container {
-    width: 100vw;
-  }
-  .headshot {
-    width: auto;
+  .about-text {
+    width: 90%;
   }
 }
 
