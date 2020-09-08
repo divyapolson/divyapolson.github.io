@@ -271,6 +271,7 @@ hr {
   background-color: #fafafa;
 }
 .headshot {
+  max-width: 1440px;
   width: 90%;
   padding: 1.5em;
   text-align: center;
