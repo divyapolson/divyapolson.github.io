@@ -167,14 +167,6 @@ hr {
   font-weight: 500;
 }
 
-.insight {
-  font-size: 22px;
-  line-height: 36px !important;
-  font-weight: 500;
-  display: inline-block;
-  padding-left: 0.6em;
-}
-
 .col {
   padding: 20px;
   width: 24%;
@@ -183,11 +175,6 @@ hr {
   font-size: 16px;
   font-weight: 200;
   line-height: 22px;
-}
-
-.heading {
-  font-size: 24px;
-  font-weight: 800;
 }
 
 .hmw {
@@ -293,18 +280,6 @@ hr {
   padding: 0 30px;
 }
 
-.circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #d97458;
-  color: #fef0d3;
-  line-height: 40px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-}
-
 .cta,
 .cta-link {
   font-size: 16px;
@@ -354,8 +329,8 @@ hr {
 .modal-content {
   margin: auto;
   display: block;
-  height: 80vh;
-  /* max-width: 700px; */
+  width: 90%;
+  height: auto;
 }
 
 #modal-caption {
@@ -601,9 +576,39 @@ input:focus {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
+.target-box {
+  width: 50%;
+}
+
 @media screen and (max-width: 1200px) {
   .mission-img {
     width: 200px !important;
+  }
+  .shrink {
+    flex-direction: column;
+  }
+  .shrink .right-box,
+  .shrink .left-box {
+    margin-top: 30px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .bottle {
+    padding: 0 !important;
+    align-items: flex-start !important;
+  }
+  .homio-product {
+    display: none;
+  }
+  .homio-product2 {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .target-large {
+    width: 400px !important;
   }
 }
 
@@ -639,7 +644,9 @@ input:focus {
     margin: 0 auto;
   }
 
-  .image-holder {
+  .image-holder,
+  .target-box,
+  .caption {
     width: 100%;
   }
   .mission {
@@ -651,13 +658,15 @@ input:focus {
   }
   .illo2,
   .blocks1,
-  .feature-desc {
+  .feature-desc,
+  .problem-desc2 {
     display: none;
   }
 
   .illo1,
   .blocks2,
-  .feature-desc-top {
+  .feature-desc-top,
+  .problem-desc {
     display: block !important;
   }
   .right-box,
@@ -667,6 +676,9 @@ input:focus {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+  }
+  .target-box {
+    margin: 50px 0 0 !important;
   }
 }
 
@@ -683,7 +695,12 @@ input:focus {
   .section,
   .sub-section,
   .images {
-    width: 95vw;
+    width: 95vw !important;
+    padding: 3em !important;
+  }
+  .target-img,
+  .target-large {
+    width: 400px !important;
   }
   .trio-item {
     width: 100%;
@@ -705,7 +722,14 @@ input:focus {
   .section,
   .sub-section,
   .images {
-    width: 100vw;
+    width: 100vw !important;
     padding: 2em;
+  }
+  .name-title {
+    display: none;
+  }
+  .target-img,
+  .target-large {
+    width: 300px !important;
   }
 }

@@ -13,7 +13,7 @@
   <body>
     <div id="header" class="header">
       <div id="links">
-        <a href="/">Divya Polson</a>
+        <a class="name-title" href="/">Divya Polson</a>
         <span id="nav-links">
           <a href="/#work">Work</a>
           <a href="/about">About</a>
@@ -52,7 +52,7 @@
 
     <img
       style="width: 100vw;
-    height: auto;"
+    height: auto; margin-top: 50px;"
       src="assets/homio/header.png"
     />
     <div class="metadata-grid">
@@ -122,17 +122,16 @@
       data-src="assets/homio/problem.png"
     />
 
-    <div>
-      <div style="padding-top: 144px; " class="section">
+    <div style="padding: 144px 0;">
+      <div class="section">
         <h2 class="section-heading">Narrowing our focus</h2>
       </div>
-      <div class="sub-section">
-        <div
-          class="image-holder"
-          style="margin-right: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
-        >
-          <p class="sub-heading">WHO</p>
-          <h2 style="padding: 0;">Ages 15 to 25</h2>
+      <div class="sub-section userstory" style="background-color: #fff7e6;">
+        <div style="margin-right: 5%; flex:1; padding: 3%;">
+          <p class="sub-heading">Who</p>
+          <h2 style="padding: 0;">
+            Ages 15 to 25
+          </h2>
           <p>
             Our research indicated that adolescent and young adult age is when
             panic attacks typically onset and peak.
@@ -144,21 +143,38 @@
         </div>
         <div
           class="image-holder"
-          style="background-image: url('assets/homio/who.png'); flex:1;"
+          style="background-image: url('assets/homio/who.png');"
         ></div>
       </div>
-      <div class="sub-section">
-        <!-- <img style="flex:1;" data-src="assets/homio/where.png" /> -->
+      <div class="sub-section userstory" style="background-color: #fff7e6;">
+        <div
+          class="problem-desc"
+          style="display: none; margin-left: 5%; flex:1;padding: 3%;"
+        >
+          <p class="sub-heading">Where</p>
+          <h2 style="padding: 0;">
+            The classroom
+          </h2>
+          <p>
+            Panic attacks happen without warning at anywhere,
+            anytime—experiencing one in a public setting adds anxiety to this
+            already mentally and physically debilitating event.
+          </p>
+          <p>
+            We narrowed in on classrooms because among our target users, this is
+            where they spend much of their day and it is often a source of
+            stress.
+          </p>
+        </div>
         <div
           class="image-holder"
           style="background-image: url('assets/homio/where.png');"
         ></div>
-        <div
-          class="image-holder"
-          style="margin-left: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
-        >
-          <p class="sub-heading">WHERE</p>
-          <h2 style="padding: 0;">The classroom</h2>
+        <div class="problem-desc2" style="margin-left: 5%; flex:1;padding: 3%;">
+          <p class="sub-heading">Where</p>
+          <h2 style="padding: 0;">
+            The classroom
+          </h2>
           <p>
             Panic attacks happen without warning at anywhere,
             anytime—experiencing one in a public setting adds anxiety to this
@@ -171,13 +187,12 @@
           </p>
         </div>
       </div>
-      <div class="sub-section">
-        <div
-          class="image-holder"
-          style="margin-right: 5%; flex:1; background-color: #fff7e6; padding: 3%;"
-        >
-          <p class="sub-heading">WHEN</p>
-          <h2 style="padding: 0;">Real time support</h2>
+      <div class="sub-section userstory" style="background-color: #fff7e6;">
+        <div style="margin-right: 5%; flex:1; padding: 3%;">
+          <p class="sub-heading">When</p>
+          <h2 style="padding: 0;">
+            Real time support
+          </h2>
           <p>
             Our response is in no way meant to be a replacement for therapy and
             other long-term recovery methods. Rather, our goal is to support
@@ -187,9 +202,8 @@
         </div>
         <div
           class="image-holder"
-          style="background-image: url('assets/homio/when.png'); flex:1;"
+          style="background-image: url('assets/homio/when.png');"
         ></div>
-        <!-- <img style="flex:1;" data-src="assets/homio/when.png" /> -->
       </div>
     </div>
     <div style="color: #fef0d3;" class="hmw">
@@ -211,13 +225,7 @@
         reported a history of panic attacks.
       </p>
       <div style="padding-top: 50px;">
-        <div style="display: inline-block;" class="circle">
-          1
-        </div>
-        <p
-          style="display: inline-block; padding-left: 1em;"
-          class="sub-heading"
-        >
+        <p class="sub-heading" style="color: #e74c3c;">
           UNDERSTANDING THE LIVED EXPERIENCE
         </p>
       </div>
@@ -237,11 +245,8 @@
       </p>
     </div>
     <div class="section">
-      <div style="display: inline-block;" class="circle">
-        2
-      </div>
-      <p style="display: inline-block; padding-left: 1em;" class="sub-heading">
-        MAPPING THE CURRENT SUPPORT SYSTEM
+      <p class="sub-heading" style="color: #e74c3c;">
+        Mapping the current support system
       </p>
       <p>Our second probe was aimed at understanding:</p>
       <ul>
@@ -276,9 +281,12 @@
         </div>
       </div>
     </div>
-    <div style="background-color: #FAFAFA; padding: 100px;">
-      <div class="sub-section">
-        <div style="padding-right: 7%;">
+    <div style="background-color: #FAFAFA; padding: 100px 0;">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
+        <div class="left-box">
           <h2 style="padding: 0;">
             Survey
           </h2>
@@ -295,21 +303,28 @@
             <li>Who do they feel comfortable getting support from?</li>
           </ul>
         </div>
-        <img style="max-height: 370px;" data-src="assets/homio/survey.jpg" />
+        <img
+          class="target-large"
+          style="max-height: 370px;"
+          data-src="assets/homio/survey.jpg"
+        />
       </div>
     </div>
 
-    <div style="background-color: #fff7e6; padding: 100px;">
+    <div style="background-color: #fff7e6; padding: 100px 0;">
       <div class="section">
         <h2 style="font-size: 42px;" class="section-heading">Key Insights</h2>
       </div>
-      <!-- <img style= "width: 100%;" data-src="assets/homio/insight1.png"/>
-      <img style="width: 100%;" data-src="assets/homio/insight2.png" />
-      <img style="width: 100%;" data-src="assets/homio/insight3.png" /> -->
-
-      <div class="sub-section">
-        <img style="max-height: 370px;" data-src="assets/homio/hide.png" />
-        <div style="padding-left: 7%;">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
+        <img
+          class="target-large"
+          style="max-height: 370px;"
+          data-src="assets/homio/hide.png"
+        />
+        <div class="right-box">
           <p class="sub-heading">PERCEPTION</p>
           <h2 style="padding: 0;">
             During a panic attack, people are self-conscious of how they are
@@ -328,9 +343,16 @@
         </div>
       </div>
 
-      <div class="sub-section">
-        <img style="max-height: 370px;" data-src="assets/homio/support.png" />
-        <div style="padding-left: 7%;">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
+        <img
+          class="target-large"
+          style="max-height: 370px;"
+          data-src="assets/homio/support.png"
+        />
+        <div class="right-box">
           <p class="sub-heading">GETTING HELP</p>
           <h2 style="padding: 0;">
             External support was met with mixed responses.
@@ -348,12 +370,16 @@
         </div>
       </div>
 
-      <div class="sub-section">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
         <img
+          class="target-large"
           style="max-height: 370px;"
           data-src="assets/homio/distraction.png"
         />
-        <div style="padding-left: 7%;">
+        <div class="right-box">
           <p class="sub-heading">COPING METHODS</p>
           <h2 style="padding: 0;">
             Grounding exercises and distraction were common relief techniques.
@@ -428,8 +454,8 @@
       </div>
     </div>
     <div style="padding: 80px 0; background-color: #fff7e6;">
-      <div class="sub-section">
-        <div style="padding-right: 7%;">
+      <div class="sub-section shrink">
+        <div class="left-box">
           <p class="sub-heading">
             INITIAL CONCEPT
           </p>
@@ -445,20 +471,23 @@
             access. It would ideally divert user's thoughts toward a more
             relaxed state, so they can recover from the panic attack discreetly.
           </p>
-          <div>
-            <p class="cta" style="color: #e74c3c;">View Sensory Mindmap</p>
-            <div class="modal">
-              <span class="close">&times;</span>
-              <img
-                class="modal-content"
-                src="assets/homio/mindmap.png"
-                alt="Sensory mindmap"
-              />
-              <div id="modal-caption">Sensory Mindmap</div>
-            </div>
-          </div>
         </div>
-        <img style="max-height: 370px;" data-src="assets/homio/concept1.png" />
+        <img
+          style="min-width: 40%; width: 40%;"
+          data-src="assets/homio/concept1.png"
+        />
+      </div>
+      <div style="text-align: center;">
+        <p class="cta" style="color: #e74c3c;">View Sensory Mindmap</p>
+        <div class="modal">
+          <span class="close">&times;</span>
+          <img
+            class="modal-content"
+            src="assets/homio/mindmap.png"
+            alt="Sensory mindmap"
+          />
+          <div id="modal-caption">Sensory Mindmap</div>
+        </div>
       </div>
       <div class="images">
         <img
@@ -472,9 +501,16 @@
       <div style="padding-top: 144px;" class="section">
         <h2 class="section-heading">Prototyping</h2>
       </div>
-      <div class="sub-section">
-        <img style="max-height: 370px;" data-src="assets/homio/swatches.png" />
-        <div style="padding-left: 7%;">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
+        <img
+          class="target-large"
+          style="max-height: 370px;"
+          data-src="assets/homio/swatches.png"
+        />
+        <div class="right-box">
           <p class="sub-heading">TESTING SENSORY SAMPLES</p>
           <h2 style="padding: 0;">
             What materials are engaging?
@@ -489,8 +525,11 @@
         </div>
       </div>
 
-      <div class="sub-section">
-        <div style="padding-right: 7%;">
+      <div
+        class="sub-section shrink"
+        style="width: 80vw; justify-content: center;"
+      >
+        <div class="left-box homio-product">
           <p class="sub-heading">TESTING THE CUBE FORM FACTOR</p>
           <h2 style="padding: 0;">
             Is the form factor practical and accessible?
@@ -504,78 +543,95 @@
             public.
           </p>
         </div>
-        <img style="max-height: 370px;" data-src="assets/homio/cube.jpg" />
+        <img
+          class="target-large"
+          style="max-height: 370px;"
+          data-src="assets/homio/cube.jpg"
+        />
+        <div class="left-box homio-product2" style="display: none;">
+          <p class="sub-heading">TESTING THE CUBE FORM FACTOR</p>
+          <h2 style="padding: 0;">
+            Is the form factor practical and accessible?
+          </h2>
+          <p>
+            We prototyped a low-fidelity cardboard cube connected to a keychain
+            to test the interaction. We asked participants to simulate using it
+            by holding the cube and interacting it with their eye, nose, and
+            ear. We wanted to test whether this object would be easy to access
+            during a panic attack and if the user felt comfortable using it in
+            public.
+          </p>
+        </div>
       </div>
       <img
         style="width:100%; padding: 80px 0;"
         data-src="assets/homio/test2.png"
       />
-      <div style="padding-bottom: 144px;" class="section">
-        <h2>
-          Testing insights
-        </h2>
-        <div style="padding-top: 30px;">
-          <div style="display: inline-block;" class="circle">
-            1
+      <div style="padding-bottom: 144px;">
+        <div class="section">
+          <h2>
+            Testing insights
+          </h2>
+          <div style="padding-top: 30px;">
+            <p class="sub-heading" style="color: #e74c3c;">01</p>
+            <p class="subtitle">
+              Participants preferred malleable, interactive textures.
+            </p>
+            <p style="margin:0;">
+              Soft, squishy samples in general received positive feedback.
+              Participants also enjoyed when there was some physical feedback
+              and interactivity to the swatch (e.g. turning a knob or pressing a
+              soft button).
+            </p>
           </div>
-          <p class="insight">
-            Participants preferred malleable, interactive textures.
-          </p>
-          <p style="margin:0;">
-            Soft, squishy samples in general received positive feedback.
-            Participants also enjoyed when there was some physical feedback and
-            interactivity to the swatch (e.g. turning a knob or pressing a soft
-            button).
-          </p>
-        </div>
-        <div style="padding-top: 30px;">
-          <div style="display: inline-block;" class="circle">
-            2
+          <div style="padding-top: 30px;">
+            <p class="sub-heading" style="color: #e74c3c;">02</p>
+            <p class="subtitle">
+              Scents invoked strong positive reactions.
+            </p>
+            <p style="margin:0; font-style: italic;">
+              “I have a strong association between scents and relaxing. I use
+              lavender essential oil on my pillow. Touching things is good for
+              when I’m feeling anxious.”
+            </p>
           </div>
-          <p class="insight">
-            Scents invoked strong positive reactions.
-          </p>
-          <p style="margin:0; font-style: italic;">
-            “I have a strong association between scents and relaxing. I use
-            lavender essential oil on my pillow. Touching things is good for
-            when I’m feeling anxious.”
-          </p>
-        </div>
-        <div style="padding-top: 30px;">
-          <div style="display: inline-block;" class="circle">
-            3
+          <div style="padding-top: 30px;">
+            <p class="sub-heading" style="color: #e74c3c;">03</p>
+            <p class="subtitle">
+              Interacting with the cube could feel awkward in public.
+            </p>
+            <p style="margin:0;">
+              People felt somewhat comfortable simply holding it, but any
+              close-up interactions (such as smelling it or holding it up to the
+              eye) felt awkward and could draw attention.
+            </p>
           </div>
-          <p class="insight">
-            Interacting with the cube could feel awkward in public.
-          </p>
-          <p style="margin:0;">
-            People felt somewhat comfortable simply holding it, but any close-up
-            interactions (such as smelling it or holding it up to the eye) felt
-            awkward and could draw attention.
-          </p>
-        </div>
-        <div style="padding-top: 30px;">
-          <div style="display: inline-block;" class="circle">
-            4
+          <div style="padding-top: 30px;">
+            <p class="sub-heading" style="color: #e74c3c;">04</p>
+            <p class="subtitle">
+              Accessibility in everyday scenarios was a concern.
+            </p>
+            <p style="margin:0;">
+              The size of the cube keychain was slightly too big, and
+              participants felt it could be difficult to access and easy to
+              forget about in the moment of a panic attack. They also did not
+              want to incorporate another object on top of their daily
+              necessities.
+            </p>
           </div>
-          <p class="insight">
-            Accessibility in everyday scenarios was a concern.
-          </p>
-          <p style="margin:0;">
-            The size of the cube keychain was slightly too big, and participants
-            felt it could be difficult to access and easy to forget about in the
-            moment of a panic attack. They also did not want to incorporate
-            another object on top of their daily necessities.
-          </p>
         </div>
       </div>
-      <div style="padding: 40px; background-color: #DA7459;">
-        <div class="sub-section">
+      <div style="padding: 40px 0; background-color: #DA7459;">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
           <img
+            class="target-large"
             style="max-height: 370px;"
             data-src="assets/homio/bottletest.png"
           />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <p style="opacity: 0.5; color: #000;" class="sub-heading">
               PIVOT
             </p>
@@ -627,8 +683,11 @@
           </div>
         </div>
 
-        <div style="align-items: center;" class="sub-section">
-          <div style="padding-right: 7%;">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
+          <div class="left-box homio-product">
             <p class="sub-heading">BOTTLE DESIGN</p>
             <h2 style="padding: 0;">
               Texture attachments
@@ -640,15 +699,35 @@
               the color of the bottle by default.
             </p>
           </div>
-          <img style="max-height: 700px;" data-src="assets/homio/bottle1.png" />
+          <img
+            class="target-large"
+            style="max-height: 700px;"
+            data-src="assets/homio/bottle1.png"
+          />
+          <div class="left-box homio-product2" style="display: none;">
+            <p class="sub-heading">BOTTLE DESIGN</p>
+            <h2 style="padding: 0;">
+              Texture attachments
+            </h2>
+            <p>
+              The interactive texture attachments wrap around the bottle and sit
+              at the base of the bottle where the user can easily access them.
+              To make the attachments as inconspicuous as possible, they match
+              the color of the bottle by default.
+            </p>
+          </div>
         </div>
 
         <div
           style="align-items: center; padding: 0 6em 6em;"
-          class="sub-section"
+          class="sub-section shrink bottle"
         >
-          <img style="max-height: 600px;" data-src="assets/homio/bottle2.png" />
-          <div style="padding-left: 7%;">
+          <img
+            class="target-large"
+            style="max-height: 600px;"
+            data-src="assets/homio/bottle2.png"
+          />
+          <div class="right-box">
             <p class="sub-heading">BOTTLE DESIGN</p>
             <h2 style="padding: 0;">
               Aromatherapy cap
@@ -664,8 +743,11 @@
       </div>
 
       <div style="background-color: #FAFAFA; padding: 80px 0;">
-        <div class="sub-section">
-          <div style="padding-right: 7%;">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
+          <div class="left-box">
             <p class="sub-heading">SENSORY COMPONENTS</p>
             <h2 style="padding: 0;">
               Scents and textures
@@ -678,10 +760,14 @@
               others are more interactive.
             </p>
           </div>
-          <img style="max-height: 350px;" data-src="assets/homio/cards.png" />
+          <img
+            class="target-large"
+            style="max-height: 350px;"
+            data-src="assets/homio/cards.png"
+          />
         </div>
       </div>
-      <div style="padding: 144px;">
+      <div style="padding: 140px 0;">
         <div class="section">
           <p class="sub-heading">THE SERVICE</p>
           <h2>Customization website</h2>
@@ -695,12 +781,16 @@
           </p>
         </div>
 
-        <div class="sub-section">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
           <img
+            class="target-large"
             style="max-height: 450px;"
             data-src="assets/homio/website1.png"
           />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <p class="sub-heading">TRY IT OUT</p>
             <p class="subtitle">
               Test with a sample box
@@ -712,8 +802,11 @@
           </div>
         </div>
 
-        <div class="sub-section">
-          <div style="padding-right: 7%;">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
+          <div class="left-box homio-product">
             <p class="sub-heading">BOTTLE BUILDER</p>
             <p class="subtitle">
               Customize your bottle
@@ -724,17 +817,32 @@
             </p>
           </div>
           <img
+            class="target-large"
             style="max-height: 450px;"
             data-src="assets/homio/website2.png"
           />
+          <div class="left-box homio-product2" style="display:none">
+            <p class="sub-heading">BOTTLE BUILDER</p>
+            <p class="subtitle">
+              Customize your bottle
+            </p>
+            <p>
+              Our bottle builder allows users to select from different colors,
+              textures, and scents and preview their bottle.
+            </p>
+          </div>
         </div>
 
-        <div class="sub-section">
+        <div
+          class="sub-section shrink"
+          style="width: 80vw; justify-content: center;"
+        >
           <img
+            class="target-large"
             style="max-height: 450px;"
             data-src="assets/homio/website3.png"
           />
-          <div style="padding-left: 7%;">
+          <div class="right-box">
             <p class="sub-heading">SHOP</p>
             <p class="subtitle">
               Order add-ons
@@ -748,7 +856,7 @@
 
         <div style="text-align:center; padding: 40px 0 80px;">
           <a
-            class="cta"
+            class="cta-link"
             style="color: #e74c3c;"
             href="https://www.figma.com/file/usDWuI5Xp5etFSTslD4ypr/Homio-v2?node-id=0%3A1"
             target="_blank"
@@ -771,20 +879,6 @@
           />
         </div>
       </div>
-      <!--
-      <div class="section">
-        <p class="heading">Next steps</p>
-        <ul>
-          <li>Validate design in real classroom setting</li>
-          <li>
-            Usability test website and the customization experience
-          </li>
-          <li>
-            Expand to personalization options
-          </li>
-        </ul>
-      </div> -->
-
       <div style="padding: 144px 0;background-color: #FAFAFA;">
         <div id="reflection" class="section nav-item">
           <h2 class="section-heading">Reflection</h2>
@@ -794,9 +888,9 @@
             working closely with sensitive populations.
           </p>
           <br />
-          <p class="heading">
+          <h2 style="padding:0;">
             Co-design and sensitive design
-          </p>
+          </h2>
           <p>
             Mental health carries a lot of stigma, trauma, and characteristics
             that vary from person to person. We kept this in mind throughout our
@@ -810,7 +904,9 @@
             ours feel warm, approachable, and accepting.
           </p>
           <br />
-          <p class="heading">Working across physical and digital mediums</p>
+          <h2 style="padding:0;">
+            Working across physical and digital
+          </h2>
           <p>
             This was one of the first times I designed for a physical product,
             which meant there were a lot of opportunities for personal learning
@@ -825,7 +921,7 @@
             a more connected experience.
           </p>
           <br />
-          <p class="heading">With more time...</p>
+          <h2 style="padding:0;">With more time...</h2>
           <ul>
             <li>Validate design in real classroom setting</li>
             <li>
@@ -862,10 +958,10 @@
       <p class="credit">© Divya Polson 2020</p>
     </div>
 
-    <script>
+    <!-- <script>
       ScrollReveal().reveal(".section", { delay: 200 });
       ScrollReveal().reveal(".images", { delay: 200 });
-    </script>
+    </script> -->
 
     <script src="js/scripts.js"></script>
   </body>
