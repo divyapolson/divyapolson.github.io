@@ -269,8 +269,8 @@ hr {
 }
 .headshot {
   max-width: 1440px;
-  width: 90%;
-  padding: 1.5em;
+  width: 80%;
+  padding: 1em;
   text-align: center;
   margin: 5em auto;
 }
