@@ -226,13 +226,10 @@ hr {
 #landing-page {
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   background-color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #landing-page {
-    height: 100vh;
-  }
   #landing-page h1 {
     font-size: 32px;
     line-height: 45px;
