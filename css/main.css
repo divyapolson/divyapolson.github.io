@@ -445,15 +445,15 @@ img {
   top: -0.5em;
 }
 
-.progress-description:hover span,
+.box4:hover .progress-description span,
 .box1:hover .description span,
 .box2:hover .locked-description span,
 .box3:hover .description span {
   display: none;
 }
 
-.progress-description:hover:before {
-  content: "Coming soon";
+.box4:hover .progress-description:before {
+  content: "View additional work";
 }
 
 .box2:hover .locked-description:before {
@@ -546,6 +546,20 @@ img {
   width: 0%;
   background-color: #272c34;
 }
+
+.footer-nav {
+  background: #171717;
+  padding: 8em;
+  text-align: center;
+  color: #fff;
+  margin-top: -3px;
+}
+
+.footer-nav a {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .footer {
   bottom: 0;
   text-align: center;
@@ -568,6 +582,129 @@ img {
 }
 .icon {
   font-size: 36px;
+}
+
+/* ETC PAGE */
+
+.etc-container {
+  width: 70vw;
+  max-width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  margin-top: -100px;
+  padding-bottom: 220px;
+}
+
+.etc-grid {
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fill, [col] auto);
+  grid-template-rows: 1fr;
+}
+
+.etc-item {
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 150%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.etc-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.etc-desc {
+  color: #383838;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.etc-item h3 {
+  font-weight: 300;
+}
+
+.etc-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.a {
+  grid-column: col / span 4;
+  grid-row: row 1;
+}
+
+.b {
+  grid-column: col / span 2;
+  grid-row: row 2;
+}
+.c {
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
+}
+.d {
+  grid-column: col / span 2;
+  grid-row: row 3;
+}
+.e {
+  grid-column: col 3 / span 2;
+  grid-row: row 3;
+}
+
+.vid-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* END ETC PAGE */
+
+@media screen and (max-width: 1024px) {
+  .etc-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .etc-container {
+    width: 95vw;
+  }
+  .etc-grid {
+    grid-gap: 20px 0;
+  }
+  .b,
+  .c,
+  .d,
+  .e {
+    grid-column: col / span 4;
+  }
+  .c {
+    grid-row: row 3;
+  }
+  .d {
+    grid-row: row 4;
+  }
+  .e {
+    grid-row: row 5;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -115,4 +115,5 @@ function theDomHasLoaded(e) {
   span[3].onclick = function() {
     modal[3].style.display = "none";
   };
+
 }
